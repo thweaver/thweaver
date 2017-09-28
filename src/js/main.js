@@ -58,5 +58,58 @@ Venobox
 
 $( '.venobox' ).venobox();
 
+/*===============================================
+Homepage text
+===============================================*/
+
+window.onload = function(e) {
+	$(function(){
+		var elemGroups = [];	
+		elemGroups.push( $( '.home-brag' ) );
+		var iterations = 0; // 0 for infinite loop
+		var duration = 3000;
+		
+		var iteration = 0;
+		var total = elemGroups[ 0 ].length;
+		var modDuration = Math.floor( ( duration / 1000 ) * 60 );
+		var tick = modDuration;
+		var lastSlide = null;
+		var current = 0;
+		var raf = null;
+		
+		function advanceSlide() {
+			elemGroups.forEach( function( elems ) {
+				elems.removeClass( 'off' );
+				if ( lastSlide !== null ) {
+		 			elems.eq( lastSlide ).addClass( 'off' );	
+		 		}
+				elems.removeClass( 'current-brag' );
+				elems.eq( current ).addClass( 'current-brag' );
+			});		
+			lastSlide = current;
+			if ( current < total - 1 ) {
+				current++;
+				if ( iterations != 0 && iteration >= iterations ) {
+					cancelAnimationFrame( raf );
+				}
+			} else {
+				current = 0;
+				iteration++;
+			}
+		}
+
+		function loop() {
+			raf = requestAnimationFrame( loop );
+			if( tick < modDuration ) {
+				tick++;
+			} else {
+				tick = 0;
+				advanceSlide();
+			}
+		}
+
+		loop();
+	});
+}
 
 }); // jQuery

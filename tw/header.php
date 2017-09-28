@@ -15,4 +15,19 @@
         <link rel="stylesheet" href="css/main.min.css">
     </head>
 	<body>
-	
+	<nav>
+        <a href="#" class="site-logo">
+            <?php include 'img/logo.svg' ?>
+        </a>
+        <ul class="nav-list">
+            <li>
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <a href="#">Profile</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
