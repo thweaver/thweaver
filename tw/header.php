@@ -15,5 +15,40 @@
         <link rel="stylesheet" href="css/main.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     </head>
-	<body class="home">
-  
+	<body>
+    <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <nav>
+        <div class="hamburger">
+            <a href="/" class="hamburger-icon">
+                <span></span>
+            </a>
+        </div>
+        <a href="/" class="site-logo site-logo-nav transition">
+            <?php include 'img/logo.svg' ?>
+        </a>
+        <ul class="nav-list">
+            <li>
+                <a href="work.php" class="transition">
+                    <span>Work</span>
+                   <?php include 'img/circle-icon.svg' ?>
+                </a>
+            </li>
+            <li>
+                <a href="index.php" class="transition">
+                    <span>Profile</span>
+                   <?php include 'img/circle-icon.svg' ?>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>Contact</span>
+                    <?php include 'img/circle-icon.svg' ?>
+                </a>
+            </li>
+        </ul>
+        <div class="nav-bar"></div>
+    </nav>

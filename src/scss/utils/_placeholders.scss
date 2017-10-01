@@ -16,6 +16,12 @@
   position: absolute;
 }
 
+///////////////// Letter Spacing
+
+%kern {
+  letter-spacing: -0.05em;
+}
+
 ///////////////// Layout
 
 %container {

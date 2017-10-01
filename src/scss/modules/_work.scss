@@ -1,3 +1,7 @@
+/****************************
+Home Work Container
+****************************/
+
 .home-work {
 	margin: 0 auto;
 	max-width: 1200px;
@@ -7,9 +11,9 @@
 	padding-bottom: 75px;
 	position: relative;
 	h2 {
-		color: #1d1d1d;
+		color: $grey;
 		font-size: 42px;
-		letter-spacing: -0.05em;
+		@extend %kern;
 		text-align: center;
 		opacity: 0;
 		transform: translateY(15px);
@@ -23,6 +27,11 @@
 		right: 0;
 		width: 90%;
 		margin: auto;
+	}
+	&.in-view h2 {
+		opacity: 1;
+		transform: translateY(0);
+		transition: all 1s .3s ease-out;
 	}
 	@media (max-width: $bp-tablet) {
 		padding: 30px;
@@ -42,46 +51,51 @@
 		}
 	}
 }
-.in-view {
-	h2 {
-		opacity: 1;
-		transform: translateY(0);
-		transition: all 1s .3s ease-out;
-	}
-}
-.home-work-grid {
+
+/****************************
+Work Grid
+****************************/
+
+.work-grid {
 	width: 100%;
 	display: flex;
 	position: relative;
+	flex-wrap: wrap;
+}
+.home-work-grid {
 	margin-bottom: 50px;
 	@media (max-width: $bp-mobile) {
-		flex-wrap: wrap;
 		margin-bottom: 30px;
 	}
 }
-.home-project {
+
+/****************************
+Work Grid Item
+****************************/
+
+.project {
 	width: 33.33%;
 	padding: 5px;
 	position: relative;
 	text-decoration: none;
 	overflow: hidden;
-	border-radius: 4px;
+	border-radius: 3px;
 	transform: scale(0.6);
 	opacity: 0;
-	.home-project-image {
+	will-change: transform;
+	.project-image {
 		overflow: hidden;
-		border-radius: 4px;
+		border-radius: 3px;
 	}
 	img {
 		width: 100%;
 		height: auto;
 		display: block;
-		transition: transform 2s;
+		transition: transform 1s;
 		will-change: transform;
-
 	}
 	&:hover {
-		.home-project-info {
+		.project-info {
 			opacity: 1;
 			transform: translateX(0);
 			transition: opacity .3s, transform .3s;
@@ -107,11 +121,12 @@
 			}
 		}
 		img {
-			transform: scale(2);
+			transform: scale(1.2);
+			transition: transform 4s;
 		}
 	}
 	&:active {
-		transform: translatey(3px);
+		transform: translateY(3px);
 	}
 	@media (max-width: $bp-tablet) {
 		width: 100%;
@@ -122,12 +137,13 @@
 		}
 	}
 }
-.in-view .home-project {
+.in-view .project, 
+.in-view.project {
 	transform: scale(1);
 	opacity: 1;
 	transition: all .5s .5s ease-out;
 }
-.home-project-info {
+.project-info {
 	position: absolute;
 	width: 100%;
 	padding: 25px;
@@ -146,12 +162,12 @@
 	opacity: 0;
 	transform: translateX(-15px);
 	transition: opacity .3s 0s, transform .3s .3s;
-	border-radius: 4px;
+	border-radius: 3px;
 	overflow: hidden;
 	h2 {
 		color: white;
 		font-size: 28px;
-		letter-spacing: -0.05em;
+		@extend %kern;
 		margin: 0;
 		padding: 0;
 		text-align: left;
@@ -159,18 +175,18 @@
 	h3 {
 		color: white;
 		font-size: 20px;
-		letter-spacing: -0.05em;
+		@extend %kern;
 		font-weight: 400;
 		margin: 0;
 		padding: 0;
 	}
 	svg {
-		width: 40px;
-		height: 40px;
+		width: 32px;
+		height: 32px;
 		display: block;
 		position: absolute;
-		bottom: 25px;
-		right: 25px;
+		top: 25px;
+		left: 25px;
 		transform: scale(1.6) translateX(15px);
 		transform-origin: center;
 		transition: transform .3s .3s;
@@ -188,7 +204,7 @@
 	position: absolute;
 	top: 5px;
 	left: 5px;
-	right: 5px;
+	right: 45px;
 	bottom: 5px;
 	margin: auto;
 	z-index: 1;
@@ -196,14 +212,20 @@
 	opacity: 0;
 	transition: opacity 1s 0s;
 	will-change: opacity;
-	border-radius: 4px;
+	border-radius: 3px;
 	overflow: hidden;
 	div {
 		width: 100%;
-		height: 33.33%;
+		height: 34%;
 		transform-origin: left;
 		transform: scaleX(0);
 		transition: transform 0s .6s ease-in;
+		&:first-of-type {
+			border-radius: 4px 4px 0 0;
+		}
+		&:last-of-type {
+			border-radius: 0 0 4px 4px;
+		}
 	}
 	@media (max-width: $bp-tablet) {
 		display: none;
@@ -218,12 +240,17 @@
 .beta-info div {
 	background-color: #503966;
 }
+
+/****************************
+Home View All Button
+****************************/
+
 .view-all {
 	position: relative;
 	display: block;
-	color: darken(#49ddf8, 10%);
+	color: darken($cyan, 10%);
 	font-size: 24px;
-	letter-spacing: -0.05em;
+	@extend %kern;
 	text-align: center;
 	margin: 0 auto;
 	text-decoration: none;
@@ -253,7 +280,7 @@
 		path {
 			animation: spin 15s infinite linear;
 			transform-origin: 50%;
-			fill: #49ddf8;
+			fill: $cyan;
 		}
 	}
 	&:hover {
@@ -275,4 +302,97 @@
 .in-view .view-all {
 	opacity: 1;
 	transition: transform .3s, opacity .3s .7s;
+}
+
+/****************************
+Work Page Header
+****************************/
+
+.work-page-header {
+	width: 100%;
+	position: relative;
+	background: black url(../img/bg-pattern.jpg);
+	background-position: fixed;
+	padding: 40px;
+	padding-bottom: 0;
+	border-radius: 3px 3px 0 0;
+	img {
+		width: 100%;
+		display: block;
+		height: auto;
+		border-radius: 3px 3px 0 0;
+	}
+	&:after {
+		@extend %pseudos;
+		height: 20px;
+		background: url(../img/bg-grey-line.gif);
+		left: 0;
+		right: 0;
+		width: 90%;
+		bottom: -20px;
+		margin: auto;
+	}
+}
+.work-header-copy {
+	z-index: 2;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: -100px;
+	position: relative;
+	p {
+		max-width: 1000px;
+		padding: 50px;
+		text-align: center;
+		margin: 0 auto;
+		background: white;
+		color: black;
+		@extend %kern;
+		font-size: 26px;
+		line-height: 1.4;
+		border-radius: 3px;
+		width: 80%;
+		
+		@media (max-width: $bp-tablet) {
+			padding: 35px;
+			font-size: 24px;
+		}
+		@media (max-width: $bp-mobile) {
+			padding: 35px;
+			font-size: 18px;
+			padding: 20px;
+		}
+	}
+}
+
+/****************************
+Work Page Container
+****************************/
+
+.work-container {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+	padding: 50px;
+	position: relative;
+	@media (max-width: $bp-tablet) {
+		padding: 30px;
+		padding-bottom: 50px;
+		h2 {
+			font-size: 36px;
+		}
+		&:before {
+			top: -5px;
+		}
+	}
+	@media (max-width: $bp-mobile) {
+		padding: 30px;
+		padding-bottom: 30px;
+		h2 {
+			font-size: 28px;
+		}
+	}
 }

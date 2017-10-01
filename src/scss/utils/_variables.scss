@@ -31,3 +31,13 @@ $font-medium: em(20);
 $font-large: em(24);
 $font-xl: em(32);
 $font-xxl: em(56);
+
+/**********************
+Colors
+***********************/
+
+$cyan: #49ddf8;
+$dark-cyan: darken($cyan, 10%);
+$grey: #1d1d1d;
+$light-grey: #f4f4f4;
+

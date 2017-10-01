@@ -1,16 +1,19 @@
+/****************************
+Nav Bar
+*****************************/
+
 nav {
 	width: 100%;
-	height: 50px;
-	position: absolute;
-	top: 80px;
-	left: 0;
-	right: 0;
-	margin: auto;
-	padding: 0 80px;
+	height: 60px;
+	padding: 10px 20px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	z-index: 800;
+	position: fixed;
+	top: 0;
+	transition: transform .3s, height 0s .5s;
+	z-index: 900;
+	will-change: transform;
 	@media (max-width: $bp-tablet) {
 		display: none;
 		padding: 0;
@@ -23,96 +26,79 @@ nav {
 		flex-direction: column;
 	}
 }
-.js-nav-open nav {
-	@media (max-width: $bp-tablet) {
-		
-	}
-}
-.sticky-nav nav{
-	position: fixed;
-	top: -50px;
-	left: 0;
-	right: 0;
-	background: rgba(0,0,0,0.7);
-	height: 60px;
-	padding: 10px 20px;
-	transform: translateY(50px);
-	transition: transform .4s .3s;
-}
-.sticky-ghost {
+.nav-bar {
 	width: 100%;
-	height: 50px;
+	height: 60px;
+	background: black;
 	position: absolute;
-	top: 80px;
+	z-index: 1;
+	top: 0;
 	left: 0;
-	right: 0;
-	margin: auto;
-	padding: 0 80px;
+	background: black;
 }
+.nav-up {
+    transform: translateY(-60px);
+}
+
+/****************************
+Logo
+*****************************/
+
 .site-logo {
-	height: 50px;
 	display: block;
+	height: 30px;
+	position: relative;
+	z-index: 2;
 	svg {
 		display: block;
 		height: 100%;
 		width: auto;
 	}
-}
-.site-logo-hero {
-    position: absolute;
-    z-index: 3;
-    top: 80px;
-    left: 80px;
-    @media (max-width: $bp-tablet) {
-    	height: 30px;
-    	top: 60px;
-    	left: 60px;
-    }
-    @media screen and (max-width: $bp-mobile ) {
-    	top: 40px;
-    	left: 40px;
-    }
-}
-.site-logo-nav {
-	opacity: 0;
-	@media (max-width: $bp-tablet) {
-		display: none;
+	@media screen and (max-width: $bp-tablet ) {
+		height: 25px;
+		display: inline-block;
+		margin-top: 7px;
+		position: relative;
+		z-index: 9998;
 	}
 }
-.sticky-nav .site-logo-nav {
-	opacity: 1;
-}
+
+/****************************
+Nav List
+*****************************/
+
 .nav-list {
 	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	position: relative;
+	z-index: 2;
 	li {
 		display: flex;
 		height: 100%;
 	}
 	a {
+		position: relative;
 		display: flex;
 		align-items: center;
 		height: 100%;
-		padding: 0 15px;
+		padding: 0 10px;
 		text-decoration: none;
-		color: #49ddf8;
+		color: $cyan;
 		font-weight: 400;
-		font-size: 18px;
+		font-size: 16px;
 		letter-spacing: -0.025em;
-		position: relative;
 		transition: all .3s;
 		will-change: transform;
 		span {
 			display: block;
-			background: rgba(0,0,0,0);
 			position: relative;
 			z-index: 2;
 			will-change: transform;
 			transition:  all .3s;
 			padding: 2px;
-			border-radius: 4px;
+			border-radius: 3px;
 		}
 		svg {
 			width: 40px;
@@ -130,20 +116,28 @@ nav {
 			transform-origin: center;
 			transition: all .4s;
 			will-change: transform;
+			clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 25%, 100% 25%, 100% 75%, 0 74%, 0 100%, 100% 100%, 100% 0%);
 			path {
 				animation: spin 15s infinite linear;
 				transform-origin: 50%;
-				fill: #49ddf8;
+				fill: $cyan;
 			}
 		}
 		&:hover {
-			span {
-				background: rgba(0,0,0,1);
-			}
 			transform: scale(0.9);
 			svg {
 				opacity: 1;
 				transform: scale(1);
+			}
+		}
+		&.current {
+			text-decoration: line-through;
+			color: white;
+			&:hover {
+				transform: scale(1);
+				svg {
+					display: none;
+				}
 			}
 		}
 	}
@@ -152,14 +146,16 @@ nav {
 		margin: 0;
 		justify-content: flex-start;
 		display: block;
-		height: 100%;
-		top: 0;
+		height: calc(100% - 60px);
+		top: 60px;
 		left: 0;
 		right: 0;
 		width: 100%;
 		flex-direction: column;
+		position: absolute;
+		z-index: 9997;
 		li {
-			height: 33.33%;
+			height: 34%;
 			width: 100%;
 			transform: translateX(-100%);
 			transition: transform .3s ease-in;
@@ -170,7 +166,7 @@ nav {
 				transition: transform .3s .1s ease-in;
 			}
 			a {
-				padding: 30px;
+				padding: 30px 25px;
 				background: black;
 				width: 100%;
 				&:hover {
@@ -179,9 +175,16 @@ nav {
 				svg {
 					right: auto;
 					left: 20px;
+					clip-path: polygon(0% 0%, 0% 100%, 22% 100%, 22% 25%, 100% 25%, 100% 75%, 22% 76%, 10% 100%, 100% 100%, 100% 0%);
 				}
 			}
 		}
+	}
+}
+.js-nav-open nav {
+	@media (max-width: $bp-tablet) {
+		height: 100%;
+		transition: transform .3s, height 0s 0s;
 	}
 }
 .js-nav-open .nav-list {
@@ -191,15 +194,7 @@ nav {
 		}
 	}
 }
-.sticky-nav .site-logo {
-	height: 30px;
-	display: block;
-	svg {
-		display: block;
-		height: 100%;
-		width: auto;
-	}
-}
+
 /********************************************
 Hamburger
 *********************************************/
@@ -213,9 +208,16 @@ Hamburger
 		justify-content: flex-end;
 		padding-right: em(20);
 		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 9998;
+	}
+}
+.home-hamburger {
+	@media screen and (max-width: $bp-tablet ) {
 		top: 50px;
 		right: 50px;
-		z-index: 9999;
+		z-index: 9998;
 	}
 	@media screen and (max-width: $bp-mobile ) {
 		top: 30px;
@@ -228,15 +230,13 @@ Hamburger
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-
 	span {
 		width: 34px;
 		height: 4px;
 		background-color: white;
 		position: relative;
 		display: block;
-		border-radius: 4px;
-
+		border-radius: 3px;
 		&:before {
 			@extend %pseudos;
 			height: 4px;
@@ -245,9 +245,8 @@ Hamburger
 			right: 0;
 			background-color: white;
 			transition: all .2s;
-			border-radius: 4px;
+			border-radius: 3px;
 		}
-
 		&:after {
 			@extend %pseudos;
 			height: 4px;
@@ -256,9 +255,8 @@ Hamburger
 			right: 0;
 			background-color: white;
 			transition: all .2s;
-			border-radius: 4px;
+			border-radius: 3px;
 		}
-
 		.js-nav-open & {
 			background-color: rgba(0,0,0,0);
 			width: 55%;

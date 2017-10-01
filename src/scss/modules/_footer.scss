@@ -1,4 +1,4 @@
-.home-footer {
+.about-footer {
 	width: 100%;
 	background: url(../img/bg-dot.gif);
 	padding: 75px;
@@ -14,22 +14,22 @@
 		padding-bottom: 0;
 	}
 }
-.home-footer-copy {
+.about-footer-copy {
 	max-width: 1100px;
 	padding: 50px;
 	text-align: center;
 	margin: 0 auto;
 	background: black;
 	color: white;
-	letter-spacing: -0.05em;
-	font-size: 32px;
+	@extend %kern;
+	font-size: 26px;
 	line-height: 1.4;
-	border-radius: 4px;
+	border-radius: 3px;
 	margin-bottom: 50px;
 	opacity: 0;
 	@media (max-width: $bp-tablet) {
 		padding: 35px;
-		font-size: 26px;
+		font-size: 23px;
 	}
 	@media (max-width: $bp-mobile) {
 		padding: 35px;
@@ -37,11 +37,11 @@
 		padding: 20px;
 	}
 }
-.in-view.home-footer-copy {
+.in-view.about-footer-copy {
 	opacity: 1;
 	transition: opacity .5s .3s ease-out;
 }
-.home-footer-buttons {
+.about-footer-buttons {
 	margin: 0 auto;
 	display: flex;
 	position: relative;
@@ -51,8 +51,8 @@
 	div {
 		position: relative;
 		display: inline-block;
-		border-radius: 4px 4px 0 0;
-		background: #49ddf8;
+		border-radius: 3px 3px 0 0;
+		background: $cyan;
 		width: 50%;
 		margin: 0 2px;
 	}
@@ -61,7 +61,7 @@
 		display: inline-block;
 		color: white;
 		font-size: 20px;
-		letter-spacing: -0.05em;
+		@extend %kern;
 		text-align: center;
 		margin: 0 auto;
 		text-decoration: none;
@@ -71,7 +71,7 @@
 		will-change: transform;
 		span {
 			display: block;
-			background: #49ddf8;
+			background: $cyan;
 			position: relative;
 			z-index: 2;
 		}
@@ -105,30 +105,27 @@
 		}
 	}
 	&:before {
+		@extend %pseudos;
 		height: 40%;
 		width: 4px;
 		border-radius: 8px;
 		background: url(../img/bg-dot.gif);
-		content: '';
-		position: absolute;
 		top: 5px;
 		left: 0;
 		right: 0;
 		margin: auto;
-		display: block;
 		z-index: 3;
 	}
 	&:after {
+		@extend %pseudos;
 		width: 50%;
 		height: 70%;
-		position: absolute;
 		bottom: 0;
 		left: 0;
 		right: 0;
 		margin: auto;
-		background: #49ddf8;
+		background: $cyan;
 		z-index: 0;
-		content: '';
 	}
 
 	@media (max-width: $bp-mobile) {
@@ -143,7 +140,7 @@
 		}
 	}
 }
-.in-view.home-footer-buttons {
+.in-view.about-footer-buttons {
 	transform: translateY(0);
 	opacity: 1;
 	transition: all .3s .2s ease-out;

@@ -9,6 +9,7 @@ FastClick.attach(document.body);
 
 var 
 	html = $('html'),
+	win = $( window ),
 	hamburger = $('.hamburger'),
 	homeBody = $('body.home'),
 	navBar = $('.sticky-ghost'),
@@ -19,8 +20,7 @@ var
 	tabletSize = 800,
 	landscapeSize = 600,
 	mobileSize = 500,
-	xsmallSize = 350,
-	win = $( window );
+	xsmallSize = 350;
 
 /****************************************
 Retina Class
@@ -42,44 +42,6 @@ win.on( 'load', function() {
 });
 
 
-// Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });
-
-
 /****************************************
 Nav Toggle
 ****************************************/
@@ -90,7 +52,9 @@ hamburger.click(function(e){
 });
 
 
-///////// Mobile Size
+/****************************************
+Mobile Size
+****************************************/
 
 var winWidth;
 function updateWinWidth() {
@@ -110,90 +74,10 @@ function watchForMobile() {
 
 win.on( 'resize load', watchForMobile );
 
-////////// Animated Scroll
 
-win.scroll(function(i){
-	if (win.width() > tabletSize ) {
-		var scrollVar = win.scrollTop();
-		$(".hero-copy").css("opacity", 1 - win.scrollTop() / (window.innerHeight - 300));
-		$(".scroll-prompt").css("opacity", 1 - win.scrollTop() / (window.innerHeight - 300));
-	}
-});
-
-
-///////// Sticky Nav
-
-// if ( homeBody.length >= 1 ) {
-// 	var scrollTop;
-// 	function updateScrollTop() {
-// 	  scrollTop = win.scrollTop();
-// 	}
-// 	win.on( 'scroll load', updateScrollTop );
-
-// 	function stickyNav() {
-// 	  var isextended = false,
-// 	    headerLogo = $( '.sticky-ghost' ),
-// 	    navHeight = navBar.height();
-	  
-// 	  function checkextendedNav() {
-// 	    swapPoint = headerLogo.offset().top + headerLogo.height();
-// 	    if( isextended && scrollTop < swapPoint ) {
-// 	      isextended = false;
-// 	      html.removeClass( 'sticky-nav' );
-// 	    } else if( !isextended && scrollTop >= swapPoint && winWidth  > mobileSize ) {
-// 	      isextended = true;
-// 	      html.addClass( 'sticky-nav' );
-// 	    }
-// 	  }
-
-// 	  function returnExpanded() {
-// 	    if(html.hasClass('tabletSize')) {
-// 	      html.removeClass('sticky-nav');
-// 	    }
-// 	  }
-	  
-// 	  win.on( 'scroll resize', checkextendedNav );
-// 	  checkextendedNav();
-// 	  win.on( 'scroll resize', returnExpanded );
-// 	  returnExpanded();
-// 	}
-// 	win.on( 'load', stickyNav );	
-// } else {
-// 	var scrollTop;
-// 	function updateScrollTop() {
-// 	  scrollTop = win.scrollTop();
-// 	}
-// 	win.on( 'scroll load', updateScrollTop );
-
-// 	function stickyLogo() {
-// 	  var isextended = false,
-// 	    headerLogo = $( 'header' ),
-// 	    navHeight = navBar.height();
-	  
-// 	  function checkextendedNav() {
-// 	    swapPoint = headerLogo.offset().top + headerLogo.height() - navHeight;
-// 	    if( isextended && scrollTop < swapPoint ) {
-// 	      isextended = false;
-// 	      html.removeClass( 'sticky-logo' );
-// 	    } else if( !isextended && scrollTop >= swapPoint && winWidth  > mobileSize ) {
-// 	      isextended = true;
-// 	      html.addClass( 'sticky-logo' );
-// 	    }
-// 	  }
-
-// 	  function returnExpanded() {
-// 	    if(html.hasClass('tabletSize')) {
-// 	      html.removeClass('sticky-logo');
-// 	    }
-// 	  }
-	  
-// 	  win.on( 'scroll resize', checkextendedNav );
-// 	  checkextendedNav();
-// 	  win.on( 'scroll resize', returnExpanded );
-// 	  returnExpanded();
-// 	}
-// 	win.on( 'load', stickyLogo );
-// }
+/****************************************
+In View
+****************************************/
 
 
 function inView( opt ) {
@@ -252,39 +136,21 @@ inView({
 	selector: '.toggle-view',
 	once: false,
 	offsetTop: 0,
-	offsetBot: 0
+	offsetBot: -20
 });
 
 
 
 /****************************************
-Sticky Footer
+Hero text classes
 ****************************************/
-
-// function stickyFooter() {
-// 	var footerHeight = $(".footer").height();
-// 	$(".wrapper").css("padding-bottom", footerHeight);
-// 	$(".footer").css("margin-top", -footerHeight);
-// }
-// win.on( 'load resize', stickyFooter );
-
-
-/*===============================================
-Venobox
-===============================================*/
-
-$( '.venobox' ).venobox();
-
-/*===============================================
-Homepage text
-===============================================*/
 
 window.onload = function(e) {
 	$(function(){
 		var elemGroups = [];	
 		elemGroups.push( $( '.home-brag' ) );
 		var iterations = 0; // 0 for infinite loop
-		var duration = 3000;
+		var duration = 2000;
 		
 		var iteration = 0;
 		var total = elemGroups[ 0 ].length;
@@ -330,99 +196,69 @@ window.onload = function(e) {
 }
 
 
- //  var isAnimating = false,
- //    newLocation = '';
- //    firstLoad = false;
-  
- //  //trigger smooth transition from the actual page to the new one 
- //  $('main').on('click', '[data-type="page-transition"]', function(event){
- //    event.preventDefault();
- //    //detect which page has been selected
- //    var newPage = $(this).attr('href');
- //    //if the page is not already being animated - trigger animation
- //    if( !isAnimating ) changePage(newPage, true);
- //    firstLoad = true;
- //  });
+/****************************************
+Header toggle
+****************************************/
 
- //  //detect the 'popstate' event - e.g. user clicking the back button
- //  $(window).on('popstate', function() {
- //  	if( firstLoad ) {
- //      /*
- //      Safari emits a popstate event on page load - check if firstLoad is true before animating
- //      if it's false - the page has just been loaded 
- //      */
- //      var newPageArray = location.pathname.split('/'),
- //        //this is the url of the page to be loaded 
- //        newPage = newPageArray[newPageArray.length - 1];
+ var didScroll;
+ var lastScrollTop = 0;
+ var delta = 5;
+ var navbarHeight = $('nav').outerHeight();
+ var heroHeight = $('.hero-copy').outerHeight();
 
- //      if( !isAnimating  &&  newLocation != newPage ) changePage(newPage, false);
- //    }
- //    firstLoad = true;
-	// });
-
-	// function changePage(url, bool) {
- //    isAnimating = true;
- //    // trigger page animation
- //    $('body').addClass('page-is-changing');
- //    $('.cd-loading-bar').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
- //    	loadNewContent(url, bool);
- //      newLocation = url;
- //      $('.cd-loading-bar').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
- //    });
- //    //if browser doesn't support CSS transitions
- //    if( !transitionsSupported() ) {
- //      loadNewContent(url, bool);
- //      newLocation = url;
- //    }
-	// }
-
-	// function loadNewContent(url, bool) {
-	// 	url = ('' == url) ? 'index.php' : url;
- //  	var newSection = 'cd-'+url.replace('.php', '');
- //  	var section = $('<div class="cd-main-content '+newSection+'"></div>');
-  		
- //  	section.load(url+' .cd-main-content > *', function(event){
- //      // load new content and replace <main> content with the new one
- //      $('main').html(section);
- //      //if browser doesn't support CSS transitions - dont wait for the end of transitions
- //      var delay = ( transitionsSupported() ) ? 1200 : 0;
- //      setTimeout(function(){
- //        //wait for the end of the transition on the loading bar before revealing the new content
- //        ( section.hasClass('cd-about') ) ? $('body').addClass('cd-about') : $('body').removeClass('cd-about');
- //        $('body').removeClass('page-is-changing');
- //        $('.cd-loading-bar').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
- //          isAnimating = false;
- //          $('.cd-loading-bar').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
- //        });
-
- //        if( !transitionsSupported() ) isAnimating = false;
- //      }, delay);
-      
- //      if(url!=window.location && bool){
- //        //add the new page to the window.history
- //        //if the new page was triggered by a 'popstate' event, don't add it
- //        window.history.pushState({path: url},'',url);
- //      }
-	// 	});
- //  }
-
- //  function transitionsSupported() {
- //    return $('html').hasClass('csstransitions');
- //  }
-
- $(document).ready(function() {
-   $('body').css('display', 'none');
-   $('body').fadeIn(750);
-   $('.transition').click(function(event) {
-     event.preventDefault();
-     newLocation = $(this).attr("href");
-     $('body').fadeOut(750, newpage);
-   });
-   function newpage() {
-     window.location = newLocation;
-   }
+ $(window).scroll(function(event){
+     didScroll = true;
  });
 
+ setInterval(function() {
+     if (didScroll) {
+         hasScrolled();
+         didScroll = false;
+     }
+ }, 250);
+
+ function hasScrolled() {
+     var st = $(this).scrollTop();
+     
+     if(Math.abs(lastScrollTop - st) <= delta)
+         return;
+
+     if (st > lastScrollTop && st > navbarHeight){
+         // Scroll Down
+         $('nav').removeClass('nav-down').addClass('nav-up');
+     } else {
+         // Scroll Up
+         if(st + $(window).height() < $(document).height()) {
+             $('nav').removeClass('nav-up').addClass('nav-down');
+         }
+     }
+
+     if (st > lastScrollTop && st > navbarHeight){
+         // Scroll Down
+         $('.hero').removeClass('hero-on').addClass('hero-off');
+     } else {
+         // Scroll Up
+         if(st + $(window).height() < $(document).height()) {
+             $('.hero').removeClass('hero-off').addClass('hero-on');
+         }
+     }
+     
+     lastScrollTop = st;
+ }
+
+ /****************************************
+Page Transition
+ ****************************************/
+
+ $('.transition').click(function(e) {
+ 	e.preventDefault();
+	$this = $(this);
+	newLocation = $(this).attr("href");
+	$('html').addClass('fade-out');
+	setTimeout(function(){
+	  window.location = newLocation;
+	},1000);
+});
        
 });
 

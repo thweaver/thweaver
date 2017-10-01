@@ -1,0 +1,10 @@
+.wrapper {
+	width: 100%;
+	background: $light-grey;
+}
+.container {
+	margin-top: 50px;
+	@media (max-width: $bp-tablet) {
+		margin-top: 60px;
+	}
+}
