@@ -13,21 +13,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/main.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     </head>
-	<body>
-	<nav>
-        <a href="#" class="site-logo">
-            <?php include 'img/logo.svg' ?>
-        </a>
-        <ul class="nav-list">
-            <li>
-                <a href="#">Work</a>
-            </li>
-            <li>
-                <a href="#">Profile</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-    </nav>
+	<body class="home">
+  

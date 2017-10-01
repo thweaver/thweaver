@@ -11,6 +11,43 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	z-index: 800;
+	@media (max-width: $bp-tablet) {
+		display: none;
+		padding: 0;
+		height: 100%;
+		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		flex-direction: column;
+	}
+}
+.js-nav-open nav {
+	@media (max-width: $bp-tablet) {
+		
+	}
+}
+.sticky-nav nav{
+	position: fixed;
+	top: -50px;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.7);
+	height: 60px;
+	padding: 10px 20px;
+	transform: translateY(50px);
+	transition: transform .4s .3s;
+}
+.sticky-ghost {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 0 80px;
 }
 .site-logo {
 	height: 50px;
@@ -20,6 +57,30 @@ nav {
 		height: 100%;
 		width: auto;
 	}
+}
+.site-logo-hero {
+    position: absolute;
+    z-index: 3;
+    top: 80px;
+    left: 80px;
+    @media (max-width: $bp-tablet) {
+    	height: 30px;
+    	top: 60px;
+    	left: 60px;
+    }
+    @media screen and (max-width: $bp-mobile ) {
+    	top: 40px;
+    	left: 40px;
+    }
+}
+.site-logo-nav {
+	opacity: 0;
+	@media (max-width: $bp-tablet) {
+		display: none;
+	}
+}
+.sticky-nav .site-logo-nav {
+	opacity: 1;
 }
 .nav-list {
 	height: 100%;
@@ -38,7 +99,183 @@ nav {
 		text-decoration: none;
 		color: #49ddf8;
 		font-weight: 400;
-		font-size: 16px;
+		font-size: 18px;
 		letter-spacing: -0.025em;
+		position: relative;
+		transition: all .3s;
+		will-change: transform;
+		span {
+			display: block;
+			background: rgba(0,0,0,0);
+			position: relative;
+			z-index: 2;
+			will-change: transform;
+			transition:  all .3s;
+			padding: 2px;
+			border-radius: 4px;
+		}
+		svg {
+			width: 40px;
+			height: 40px;
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			opacity: 0;
+			z-index: 0;
+			transform: scale(0.6);
+			transform-origin: center;
+			transition: all .4s;
+			will-change: transform;
+			path {
+				animation: spin 15s infinite linear;
+				transform-origin: 50%;
+				fill: #49ddf8;
+			}
+		}
+		&:hover {
+			span {
+				background: rgba(0,0,0,1);
+			}
+			transform: scale(0.9);
+			svg {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
+	@media (max-width: $bp-tablet) {
+		padding: 0;
+		margin: 0;
+		justify-content: flex-start;
+		display: block;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		flex-direction: column;
+		li {
+			height: 33.33%;
+			width: 100%;
+			transform: translateX(-100%);
+			transition: transform .3s ease-in;
+			&:nth-of-type(2) {
+				transition: transform .3s .05s ease-in;
+			}
+			&:nth-of-type(1) {
+				transition: transform .3s .1s ease-in;
+			}
+			a {
+				padding: 30px;
+				background: black;
+				width: 100%;
+				&:hover {
+					transform: scale(1) !important;
+				}
+				svg {
+					right: auto;
+					left: 20px;
+				}
+			}
+		}
+	}
+}
+.js-nav-open .nav-list {
+	@media (max-width: $bp-tablet) {
+		li {
+			transform: translateX(0);
+		}
+	}
+}
+.sticky-nav .site-logo {
+	height: 30px;
+	display: block;
+	svg {
+		display: block;
+		height: 100%;
+		width: auto;
+	}
+}
+/********************************************
+Hamburger
+*********************************************/
+
+.hamburger {
+	display: none;
+	@media screen and (max-width: $bp-tablet ) {
+		display: flex;
+		flex-grow: 1;
+		align-items: center;
+		justify-content: flex-end;
+		padding-right: em(20);
+		position: absolute;
+		top: 50px;
+		right: 50px;
+		z-index: 9999;
+	}
+	@media screen and (max-width: $bp-mobile ) {
+		top: 30px;
+		right: 30px;
+	}
+}
+.hamburger-icon {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	span {
+		width: 34px;
+		height: 4px;
+		background-color: white;
+		position: relative;
+		display: block;
+		border-radius: 4px;
+
+		&:before {
+			@extend %pseudos;
+			height: 4px;
+			top: -7px;
+			width: 100%;
+			right: 0;
+			background-color: white;
+			transition: all .2s;
+			border-radius: 4px;
+		}
+
+		&:after {
+			@extend %pseudos;
+			height: 4px;
+			bottom: -7px;
+			width: 85%;
+			right: 0;
+			background-color: white;
+			transition: all .2s;
+			border-radius: 4px;
+		}
+
+		.js-nav-open & {
+			background-color: rgba(0,0,0,0);
+			width: 55%;
+			&:before {
+				top: -3px;
+    			width: 60%;
+    			right: -3px;
+			    transform: rotate(45deg);
+			    background-color: white;
+			}
+			&:after {
+				bottom: -3px;
+    			width: 60%;
+    			right: -3px;
+			    transform: rotate(-45deg);
+			    background-color: white;
+			}
+		}
 	}
 }

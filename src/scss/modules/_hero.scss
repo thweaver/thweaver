@@ -7,16 +7,26 @@
 	padding: 40px;
 	padding-bottom: 0;
 	position: relative;
+	min-height: 500px;
+	@media (max-width: $bp-tablet) {
+		padding: 20px;
+	}
+	@media (max-width: $bp-mobile) {
+		height: 400px;
+		min-height: 0;
+	}
 }
 .hero-container {
 	width: 100%;
 	height: calc(100% + 65px);
 	display: flex;
 	position: relative;
-	// background-image: url(../img/hero.jpg);
+	background-image: url(../img/hero.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	align-items: center;
+	border-radius: 4px;
+	overflow: hidden;
 	&:before {
 		content: '';
 		width: 100%;
@@ -37,6 +47,7 @@
 	height: 46px;
 	z-index: 3;
 	display: block;
+	transition: opacity;
 	svg {
 		display: block;
 		path {
@@ -48,6 +59,14 @@
 			fill: #49ddf8;
 		}
 	}
+	@media (max-width: $bp-tablet) {
+		right: 60px;
+		width: 36px;
+		height: 36px;
+	}
+	@media (max-width: $bp-mobile) {
+		bottom: -10px;
+	}
 }
 @keyframes spin {
 	from { transform: rotate(0deg); }
@@ -55,10 +74,12 @@
 }
 .hero-copy {
 	text-align: left;
-	margin-left: 125px;
+	margin-left: 105px;
 	position: relative;
 	z-index:  5;
 	margin-top: -65px;
+	transition: opacity;
+	padding-right: 100px;
 	h1 {
 		// border: dashed 1px #49ddf8;
 		font-size: 30px;
@@ -72,7 +93,7 @@
 		}
 	}
 	h2 {
-		font-size: 60px;
+		font-size: 54px;
 		letter-spacing: -0.05em;
 		color: white;
 		margin: 0;
@@ -95,6 +116,36 @@
 				opacity: 1;
 				transition: opacity .3s .4s;
 			}
+		}
+	}
+	@media (max-width: $bp-tablet) {
+		margin-left: 85px;
+		h1 {
+			font-size: 26px;
+		}
+		h2 {
+			font-size: 48px;
+		}
+		h3 {
+			font-size: 18px;
+		}
+	}
+	@media (max-width: $bp-mobile) {
+		margin-left: 40px;
+		margin-top: 0;
+		h1 {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 36px;
+		}
+		h3 {
+			font-size: 14px;
+		}
+	}
+	@media (max-width: $bp-small) {
+		h2 {
+			font-size: 28px;
 		}
 	}
 }

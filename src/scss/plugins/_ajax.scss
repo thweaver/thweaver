@@ -1,0 +1,409 @@
+// // breakpoints
+   
+// $S:     480px;   
+// $M:     768px;     
+// $L:     1170px;     
+
+// // media queries
+
+// @mixin MQ($canvas) {
+//   @if $canvas == S {
+//    @media only screen and (min-width: $S) { @content; } 
+//   }
+//   @else if $canvas == M {
+//    @media only screen and (min-width: $M) { @content; } 
+//   }
+//   @else if $canvas == L {
+//    @media only screen and (min-width: $L) { @content; } 
+//   }
+// }
+
+
+// // center vertically and/or horizontally an absolute positioned element
+
+// @mixin center($xy:xy) {
+//   @if $xy == xy {
+//     left: 50%;
+//     top: 50%;
+//     bottom: auto;
+//     right: auto;
+//     @include transform(translateX(-50%) translateY(-50%));
+//   }
+//   @else if $xy == x {
+//     left: 50%;
+//     right: auto;
+//     @include transform(translateX(-50%));
+//   }
+//   @else if $xy == y {
+//     top: 50%;
+//     bottom: auto;
+//     @include transform(translateY(-50%));
+//   }
+// }
+
+// // antialiasing mode font rendering
+
+// @mixin font-smoothing {
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+
+// // colors
+
+// $color-1: #4089a6; // Steel Blue
+// $color-2: #283040; // Ebony Clay
+// $color-3: #ffffff; // White
+
+// // fonts 
+
+// $primary-font: 'Open Sans', sans-serif;;
+
+
+
+
+
+
+// /* -------------------------------- 
+
+// Primary style
+
+// -------------------------------- */
+
+// *, *::after, *::before {
+//   box-sizing: border-box;
+// }
+
+
+
+
+
+// /* -------------------------------- 
+
+// Patterns - reusable parts of our design
+
+// -------------------------------- */
+
+
+
+// /* -------------------------------- 
+
+// Main Components 
+
+// -------------------------------- */
+
+// body {
+
+//   &::after, &::before {
+//     /* these are the 2 half blocks which cover the content once the animation is triggered */
+//     // content: '';
+//     height: 50vh;
+//     width: 100%;
+//     position: fixed;
+//     left: 0;
+//     background-color: #49ddf8;
+//     z-index: 900;
+  
+//     /* Force Hardware Acceleration */
+//    backface-visibility: hidden;
+//    transform: translateZ(0);
+//    transition: transform 0.4s 0.4s;
+//   }
+
+//   &::before {
+//     top: 0;
+//     transform: translateY(-100%) translateZ(0);
+//   }
+
+//   &::after {
+//     bottom: 0;
+//     transform: translateY(100%) translateZ(0);
+//   }
+
+//   &.page-is-changing::after, &.page-is-changing::before {
+//     transform: translateY(0);
+//    transition: transform 0.4s 0s;
+//   }
+// }
+
+// main {
+//   height: 100vh;
+//   background: #f4f4f4;
+//   text-align: center;
+//   transition: all .3s ease-out;
+//   .cd-main-content {
+//     position: relative;
+//     height: 100%;
+
+//     > div {
+//       height: 100%;
+//       -webkit-overflow-scrolling: touch;
+//       position: relative;
+//       z-index: 5;
+//     }
+
+//     &::after, &::before {
+//       /* these are the 2 gradient overlay at the top and bottom of the .cd-main-content - to indicate that you can scroll */
+//       content: '';
+//       position: absolute;
+//       left: 0;
+//       height: 50px;
+//       width: 100%;
+//     }
+
+//     &::before {
+//       top: 0;
+//     }
+    
+//     &::after {
+//       bottom: 0;
+//     }
+
+//     &.cd-index {
+//       /* .cd-main-content basic style - index page */
+   
+//       /* vertically center its content */ 
+//       display: flex;
+//       flex-direction: column;
+//       width: 100%;
+
+//       > div {
+//         /* vertically center the content inside the .cd-index */ 
+//         display: table-cell;
+//         vertical-align: middle;
+//       }
+      
+
+//     }
+
+//     &.cd-about {
+//       /* .cd-main-content basic style - about page */
+//       // background-color: $color-2;
+      
+//       // > div {
+//       //   padding-top: 50px;
+//       // }
+
+//       // &::after {
+//       //   @include linear-gradient(to top, rgba($color-2, 1), rgba($color-2, 0), $fallback: rgba($color-2, 0));
+//       // }
+
+//       // &::before {
+//       //   @include linear-gradient(to bottom, rgba($color-2, 1), rgba($color-2, 0), $fallback: rgba($color-2, 0));
+//       // }
+//     }
+//   } 
+
+//   p {
+//     width: 90%;
+//     max-width: $M;
+//     margin: 3em auto;
+//     font-size: 1.4rem;
+//     line-height: 1.6;
+//     color: tint($color-2, 20%);
+//     text-align: left;
+//   }
+
+//   @include MQ(M) {
+
+
+
+//     &.cd-index > div {
+//       padding-top: 200px;
+//     }
+
+//     &.cd-index > div {
+//       padding-top: 50px;
+//     }
+
+//     p {
+//       font-size: 1.8rem;
+//       line-height: 2;
+//     }
+//   }
+//   .page-is-changing & {
+//     transform: translateY(50px);
+//     opacity: 0;
+//   }
+// }
+
+// .cd-cover-layer {
+//   /* layer that covers the content when the animation is triggered */
+//   position: fixed;
+//   height: calc(100% - 20px);
+//   width: calc(100% - 20px);
+//   opacity: 0;
+//   visibility: hidden;
+//   background-color: $color-1;
+//   transition: opacity 0.4s 0.4s, visibility 0s 0.8s;
+
+//   .cd-about & {
+//     background-color: $color-2;
+//   }
+
+//   .page-is-changing & {
+//     opacity: 1;
+//     visibility: visible;
+//     transition: opacity 0.3s 0s, visibility 0s 0s;
+//   }
+
+//   @include MQ(M) {
+//     height: calc(100% - 40px);
+//     width: calc(100% - 40px);
+//   }
+// }
+
+// .cd-loading-bar {
+//   /* this is the loding bar - visible while switching from one page to the following one */
+//   position: fixed;
+//   z-index: 9999;
+//   left: 50%;
+//   top: 0;
+//   border-radius: 6px;
+//   height: 10px;
+//   width: 90%;
+//   background-color: black;
+//   visibility: hidden;
+//   transition: visibility 0s 0.4s, transform 0.4s 0s ease-in;
+
+//   /* Force Hardware Acceleration */
+//   backface-visibility: hidden;
+//   transform: translateZ(0);
+
+//   transform: translateX(-50%) translateY(-50%);
+
+//   &::before {
+//     /* this is the progress bar inside the loading bar */
+//     content: '';
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     height: 100%;
+//     width: 100%;
+//     border-radius: 6px;
+//     background: linear-gradient(to right, #000000 0%,#49ddf8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+//     /* Force Hardware Acceleration */
+//     backface-visibility: hidden;
+//     transform: translateZ(0);
+
+//     transform: scaleX(0);
+//     transform-origin: left center;
+//   }
+
+//   .page-is-changing & {
+//     visibility: visible;
+//     transform: translateX(-50%)  scaleX(1);
+//     transition: visibility 0s 0.3s, transform 0.4s 0.4s;
+
+//     &::before {
+//       transform: scaleX(1);
+//       transition: transform 0.8s 0.8s ease-in;
+//     }
+//   }
+
+//   @include MQ(M) {
+//     width: calc(100% - 40px);
+//   }
+// }
+
+
+
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+// .m-scene {
+//   .scene_element {
+//     animation-duration: 0.25s;
+//     transition-timing-function: ease-in;
+//     animation-fill-mode: both;
+
+//   }
+
+//   .scene_element--fadein {
+//     animation-name: fadeIn;
+//   }
+
+//   .scene_element--fadeinup {
+//     animation-name: fadeInUp;
+//   }
+
+//   .scene_element--fadeinright {
+//     animation-name: fadeInRight;
+//   }
+
+//   /** Reverse "exit" animations */
+//   &.is-exiting {
+//       .scene_element {
+//         animation-direction: alternate-reverse;
+//       }
+//   }
+// }
+
+// /*
+//  * Keyframes
+//  */
+
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0;
+//   }
+
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes fadeInUp {
+//   0% {
+//     opacity: 0;
+//     transform: translate3d(0, 100%, 0);
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: none;
+//   }
+// }
+
+// @keyframes fadeInRight {
+//   0% {
+//     opacity: 0;
+//     transform: translate3d(100%, 0, 0);
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: none;
+//   }
+// }
+
+// /*
+//  * CSS Page Transitions
+//  * Don't forget to add vendor prefixes!
+//  */
+// .m-scene {
+//   /** Basic styles for an animated element */
+//   .scene_element {
+//     animation-duration: 0.25s;
+//     transition-timing-function: ease-in;
+//     animation-fill-mode: both;
+
+//   }
+
+//   /** An element that fades in */
+//   .scene_element--fadein {
+//     animation-name: fadeIn;
+//   }
+
+//   /** An element that fades in and slides up */
+//   .scene_element--fadeinup {
+//     animation-name: fadeInUp;
+//   }
+
+//   /** An element that fades in and slides from the right */
+//   .scene_element--fadeinright {
+//     animation-name: fadeInRight;
+//   }
+// }
