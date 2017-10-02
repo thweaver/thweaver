@@ -9,12 +9,11 @@
 	z-index: 3;
 	&:before {
 		@extend %pseudos;
-		bottom: -20px;
+		bottom: 60px;
 		height: 20px;
 		background: url(../img/bg-grey-line.gif);
-		left: 0;
-		right: 0;
-		width: 90%;
+		left: 2.5%;
+		width: 45%;
 		margin: auto;
 		z-index: 3;
 	}
@@ -38,6 +37,7 @@
 	align-items: center;
 	flex-direction: column;
 	padding: 0 50px 0 0;
+	min-height: 680px;
 	.scroll-prompt {
 		position: static;
 		width: 46px;
@@ -75,7 +75,7 @@
 		text-align: left;
 		color: white;
 		@extend %kern;
-		font-size: 22px;
+		font-size: 26px;
 		line-height: 1.4;
 		position: relative;
 		max-width: 800px;
@@ -87,7 +87,7 @@
 .profile-wrapper {
 	position: relative;
 	z-index: 2;
-	
+	margin-top: -80px;
 }
 .profile-grid {
 	margin: 0 auto;

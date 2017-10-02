@@ -1,5 +1,5 @@
 <?php include 'header.php' ?>
-<div class="container dots">
+<div class="container pattern">
 	<div class="profile-header-photo">
 	</div>
 	<div class="profile-header">

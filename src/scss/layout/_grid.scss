@@ -12,6 +12,9 @@
 	&.dots {
 		background: black url(../img/bg-dot.gif);
 	}
+	&.pattern {
+		background: black url(../img/bg-pattern.jpg);
+	}
 	@media (max-width: $bp-tablet) {
 		margin-top: 60px;
 	}
