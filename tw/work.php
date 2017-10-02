@@ -3,11 +3,11 @@
 
 
 <div class="container">
-<div class="work-page-header">
+<div class="page-header">
 	<img src="img/work-page.jpg">
 </div>
 <div class="wrapper">
-<div class="work-header-copy">
+<div class="header-copy">
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
 	</p>

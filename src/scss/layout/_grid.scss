@@ -1,9 +1,17 @@
 .wrapper {
 	width: 100%;
 	background: $light-grey;
+	&.pattern {
+		background: black url(../img/bg-pattern.jpg);
+	}
 }
 .container {
 	margin-top: 50px;
+	height: 100%;
+	width: 100%;
+	&.dots {
+		background: black url(../img/bg-dot.gif);
+	}
 	@media (max-width: $bp-tablet) {
 		margin-top: 60px;
 	}

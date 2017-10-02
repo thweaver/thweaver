@@ -304,69 +304,6 @@ Home View All Button
 	transition: transform .3s, opacity .3s .7s;
 }
 
-/****************************
-Work Page Header
-****************************/
-
-.work-page-header {
-	width: 100%;
-	position: relative;
-	background: black url(../img/bg-pattern.jpg);
-	background-position: fixed;
-	padding: 40px;
-	padding-bottom: 0;
-	border-radius: 3px 3px 0 0;
-	img {
-		width: 100%;
-		display: block;
-		height: auto;
-		border-radius: 3px 3px 0 0;
-	}
-	&:after {
-		@extend %pseudos;
-		height: 20px;
-		background: url(../img/bg-grey-line.gif);
-		left: 0;
-		right: 0;
-		width: 90%;
-		bottom: -20px;
-		margin: auto;
-	}
-}
-.work-header-copy {
-	z-index: 2;
-	left: 0;
-	right: 0;
-	margin: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: -100px;
-	position: relative;
-	p {
-		max-width: 1000px;
-		padding: 50px;
-		text-align: center;
-		margin: 0 auto;
-		background: white;
-		color: black;
-		@extend %kern;
-		font-size: 26px;
-		line-height: 1.4;
-		border-radius: 3px;
-		width: 80%;
-		
-		@media (max-width: $bp-tablet) {
-			padding: 35px;
-			font-size: 24px;
-		}
-		@media (max-width: $bp-mobile) {
-			padding: 35px;
-			font-size: 18px;
-			padding: 20px;
-		}
-	}
-}
 
 /****************************
 Work Page Container
@@ -389,8 +326,8 @@ Work Page Container
 		}
 	}
 	@media (max-width: $bp-mobile) {
-		padding: 30px;
-		padding-bottom: 30px;
+		padding: 20px;
+		padding-bottom: 20px;
 		h2 {
 			font-size: 28px;
 		}

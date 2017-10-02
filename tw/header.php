@@ -38,7 +38,7 @@
                 </a>
             </li>
             <li>
-                <a href="index.php" class="transition">
+                <a href="profile.php" class="transition">
                     <span>Profile</span>
                    <?php include 'img/circle-icon.svg' ?>
                 </a>
