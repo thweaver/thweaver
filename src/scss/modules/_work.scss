@@ -34,7 +34,7 @@ Home Work Container
 		transition: all 1s .3s ease-out;
 	}
 	@media (max-width: $bp-tablet) {
-		padding: 30px;
+		padding: 35px;
 		padding-bottom: 50px;
 		h2 {
 			font-size: 36px;
@@ -44,7 +44,7 @@ Home Work Container
 		}
 	}
 	@media (max-width: $bp-mobile) {
-		padding: 30px;
+		padding: 25px;
 		padding-bottom: 30px;
 		h2 {
 			font-size: 28px;
@@ -56,16 +56,10 @@ Home Work Container
 Work Grid
 ****************************/
 
-.work-grid {
-	width: 100%;
-	display: flex;
-	position: relative;
-	flex-wrap: wrap;
-}
 .home-work-grid {
 	margin-bottom: 50px;
 	@media (max-width: $bp-mobile) {
-		margin-bottom: 30px;
+		margin-bottom: 25px;
 	}
 }
 
@@ -299,7 +293,8 @@ Home View All Button
 		}
 	}
 }
-.in-view .view-all {
+.in-view .view-all,
+.in-view.view-all {
 	opacity: 1;
 	transition: transform .3s, opacity .3s .7s;
 }
@@ -316,7 +311,7 @@ Work Page Container
 	padding: 50px;
 	position: relative;
 	@media (max-width: $bp-tablet) {
-		padding: 30px;
+		padding: 35px;
 		padding-bottom: 50px;
 		h2 {
 			font-size: 36px;
@@ -326,8 +321,8 @@ Work Page Container
 		}
 	}
 	@media (max-width: $bp-mobile) {
-		padding: 20px;
-		padding-bottom: 20px;
+		padding: 25px;
+		padding-bottom: 25px;
 		h2 {
 			font-size: 28px;
 		}

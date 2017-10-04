@@ -27,7 +27,7 @@
 		<div class="wrapper">
 			<div class="home-work toggle-view">
 				<h2>Recent Work</h2>
-				<div class="work-grid home-work-grid">
+				<div class="grid home-work-grid">
 					<a  href="" class="project">
 						<div class="project-info">
 							<h2>Project Title</h2>
@@ -84,7 +84,7 @@
 		<!--About Footer-->
 		<div class="about-footer ">
 			<p class="about-footer-copy toggle-view">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+				I have a diverse background in UI & Web design as well as front-end development. I am an advocate for strong visual communication. I believe that good design helps instill an emotional connection between the user and brand or product.
 			</p>
 			<div class="about-footer-buttons toggle-view">
 				<div>

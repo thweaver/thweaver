@@ -9,11 +9,11 @@
 <div class="wrapper">
 <div class="header-copy">
 	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+		I believe that good design invokes feeling. This helps instill an emotional connection between the user and brand or product.
 	</p>
 </div>
 <div class="work-container">
-	<div class="work-grid">
+	<div class="grid">
 		<a  href="" class="project toggle-view">
 			<div class="project-info">
 				<h2>Project Title</h2>

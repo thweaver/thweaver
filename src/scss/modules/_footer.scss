@@ -5,6 +5,8 @@
 	padding-bottom: 0;
 	text-align: center;
 	overflow: hidden;
+	position: relative;
+	z-index: 3;
 	@media (max-width: $bp-tablet) {
 		padding: 50px;
 		padding-bottom: 0
