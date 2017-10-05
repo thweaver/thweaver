@@ -9,7 +9,7 @@
 	}
 }
 .container {
-	margin-top: 50px;
+	padding-top: 60px;
 	height: 100%;
 	width: 100%;
 	&.dots {
@@ -18,8 +18,10 @@
 	&.pattern {
 		background: black url(../img/bg-pattern.jpg);
 	}
-	@media (max-width: $bp-tablet) {
-		margin-top: 60px;
+	&.flex {
+		align-items: center;
+		justify-content: center;
+		display: flex;
 	}
 }
 .grid {

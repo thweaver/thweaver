@@ -10,10 +10,19 @@
 	background-position: fixed;
 	@media (max-width: $bp-tablet) {
 		padding: 20px;
+
 	}
 	@media (max-width: $bp-mobile) {
 		height: 400px;
 		min-height: 0;
+	}
+	&.contact-hero {
+		height: 100%;
+		padding-top: 90px;
+		margin-top: 0;
+		@media (max-width: $bp-tablet) {
+			padding-top: 80px;
+		}
 	}
 }
 .hero-container {
@@ -36,6 +45,9 @@
 		z-index: 2;
 		top: 0;
 		left: 0;
+	}
+	.contact-hero & {
+		height: 100%;
 	}
 }
 .hero-copy {
@@ -64,6 +76,14 @@
 		padding: 0;
 		width: 100%;
 		max-width: 765px;
+		a {
+			color: white;
+			text-decoration: none;
+			transition: color .3s;
+			&:hover {
+				color: $cyan;
+			}
+		}
 	}
 	h3 {
 		color: #8a8a8a;
@@ -110,6 +130,15 @@
 	@media (max-width: $bp-small) {
 		h2 {
 			font-size: 28px;
+		}
+	}
+	.contact-hero & {
+		@media (max-width: $bp-mobile) {
+			padding: 30px;
+			margin-left: 0;
+			h2 {
+				font-size: 24px;
+			}
 		}
 	}
 }
