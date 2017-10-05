@@ -27,10 +27,10 @@
                 <span></span>
             </a>
         </div>
-        <!-- <a href="/" class="site-logo site-logo-nav transition">
+        <a href="/" class="site-logo site-logo-nav transition">
             <?php include 'img/logo.svg' ?>
-        </a> -->
-        <!-- <ul class="nav-list">
+        </a>
+        <ul class="nav-list">
             <li>
                 <a href="work.php" class="transition">
                     <span>Work</span>
@@ -49,6 +49,6 @@
                     <?php include 'img/circle-icon.svg' ?>
                 </a>
             </li>
-        </ul> -->
+        </ul>
         <div class="nav-bar"></div>
     </nav>

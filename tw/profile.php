@@ -20,28 +20,28 @@
 			<div class="grid profile-grid">
 				<div class="profile-grid-item toggle-view">
 					<div class="profile-grid-item-content">
-						<?php include 'img/circle-icon.svg' ?>
+						<?php include 'img/ux-icon.svg' ?>
 						<h2>Lorem Ipsum Dolar</h2>
 						<p>I have a strong and diverse background in UI & Web design as well as front-end development. I also have a passion for graphic design and am an advocate for strong visual communication.</p>
 					</div>
 				</div>
 				<div class="profile-grid-item toggle-view">
 					<div class="profile-grid-item-content">
-						<?php include 'img/circle-icon.svg' ?>
+						<?php include 'img/design-icon.svg' ?>
 						<h2>Lorem Ipsum Dolar</h2>
 						<p>I have a strong and diverse background in UI & Web design as well as front-end development. I also have a passion for graphic design and am an advocate for strong visual communication.</p>
 					</div>
 				</div>
 				<div class="profile-grid-item toggle-view">
 					<div class="profile-grid-item-content">
-						<?php include 'img/circle-icon.svg' ?>
+						<?php include 'img/code-icon.svg' ?>
 						<h2>Lorem Ipsum Dolar</h2>
 						<p>I believe that good design helps instill an emotional connection between the user and brand or product. Visual design is my expertise and I strive to capture the perfect feeling with each design I create. </p>
 					</div>
 				</div>
 				<div class="profile-grid-item toggle-view">
 					<div class="profile-grid-item-content">
-						<?php include 'img/circle-icon.svg' ?>
+						<?php include 'img/brand-icon.svg' ?>
 						<h2>Lorem Ipsum Dolar</h2>
 						<p>I have a strong and diverse background in UI & Web design as well as front-end development. I also have a passion for graphic design and am an advocate for strong visual communication.</p>
 					</div>
