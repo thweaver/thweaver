@@ -84,7 +84,7 @@
 		<!--About Footer-->
 		<div class="about-footer ">
 			<p class="about-footer-copy toggle-view">
-				I have a diverse background in UI & Web design as well as front-end development. I am an advocate for strong visual communication. I believe that good design helps instill an emotional connection between the user and brand or product.
+				Hey! Im Thomas. Thanks for checking out my site. For the past 11 years I have helped bridge the gap between business goals and user needs, working seamlessly between design and dev to bring ideas to life. When I’m working on a project, I like to be involved every step of the way, ensuring design standards and brand consistancy. 
 			</p>
 			<div class="about-footer-buttons toggle-view">
 				<div>

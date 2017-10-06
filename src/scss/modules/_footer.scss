@@ -18,23 +18,19 @@
 }
 .about-footer-copy {
 	max-width: 900px;
-	padding: 50px;
+	padding: 35px;
 	text-align: left;
 	margin: 0 auto;
 	background: black;
 	color: white;
 	@extend %kern;
-	font-size: 26px;
+	font-size: 22px;
 	line-height: 1.4;
-	border-radius: 3px;
+	// border-radius: 3px;
 	margin-bottom: 50px;
 	opacity: 0;
-	@media (max-width: $bp-tablet) {
-		padding: 35px;
-		font-size: 23px;
-	}
 	@media (max-width: $bp-mobile) {
-		padding: 35px;
+		padding: 25px;
 		font-size: 18px;
 		padding: 20px;
 	}
@@ -47,13 +43,13 @@
 	margin: 0 auto;
 	display: flex;
 	position: relative;
-	width: 500px;
+	width: 400px;
 	transform: translateY(50px);
 	opacity: 0;
 	div {
 		position: relative;
 		display: inline-block;
-		border-radius: 3px 3px 0 0;
+		// border-radius: 3px 3px 0 0;
 		background: $cyan;
 		width: 50%;
 		margin: 0 2px;
@@ -62,13 +58,13 @@
 		position: relative;
 		display: inline-block;
 		color: white;
-		font-size: 20px;
+		font-size: 18px;
 		@extend %kern;
 		text-align: center;
 		margin: 0 auto;
 		text-decoration: none;
 		transition: all .3s;
-		padding: 30px;
+		padding: 20px;
 		z-index: 2;
 		will-change: transform;
 		span {
@@ -78,8 +74,8 @@
 			z-index: 2;
 		}
 		svg {
-			width: 60px;
-			height: 60px;
+			width: 40px;
+			height: 40px;
 			display: block;
 			position: absolute;
 			left: 0;
@@ -110,7 +106,7 @@
 		@extend %pseudos;
 		height: 40%;
 		width: 4px;
-		border-radius: 8px;
+		// border-radius: 8px;
 		background: url(../img/bg-dot.gif);
 		top: 5px;
 		left: 0;

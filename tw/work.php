@@ -9,7 +9,7 @@
 <div class="wrapper">
 <div class="header-copy">
 	<p>
-		I believe that good design invokes feeling. This helps instill an emotional connection between the user and brand or product.
+		Here is a collection of some of my more recent work. I have been involved in hundreds of projects over the past 11 years, everything from large e-commerce sites, to small native apps. This is just a small sampling. Drop me a line if you’d like to see more!
 	</p>
 </div>
 <div class="work-container">
@@ -108,7 +108,7 @@
 </div>
 <div class="about-footer ">
 	<p class="about-footer-copy toggle-view">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+		Im constantly pushing myself to explore different design mediums, and learn new techniques and methods. Keep checking back to see what I come up!
 	</p>
 	<div class="about-footer-buttons toggle-view">
 		<div>

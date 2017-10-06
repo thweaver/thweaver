@@ -11,20 +11,22 @@ Header
 		width: 100%;
 		display: block;
 		height: auto;
-		border-radius: 3px;
+		// border-radius: 3px;
 		position: relative;
 		z-index: 2;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,0.08)
 	}
 	&:after {
 		@extend %pseudos;
 		height: 20px;
-		background: url(../img/bg-grey-line.gif);
+		background: url(../img/bg-black-dots.png);
 		left: 0;
 		right: 0;
 		width: 90%;
-		bottom: -20px;
+		bottom: -22px;
 		margin: auto;
-		max-width: 1100px;
+		max-width: 1300px;
+		background-size: 12px;
 	}
 	&:before {
 		background: black url(../img/bg-pattern.jpg);
@@ -44,7 +46,7 @@ Header
 	@media (max-width: $bp-mobile) {
 		padding: 0;
 		img {
-			border-radius: 0;
+			// border-radius: 0;
 		}
 	}
 }
@@ -60,28 +62,27 @@ Header
 	position: relative;
 	p {
 		max-width: 1000px;
-		padding: 50px;
+		padding: 35px;
 		text-align: left;
 		margin: 0 auto;
 		background: white;
 		color: black;
 		@extend %kern;
-		font-size: 26px;
+		font-size: 24px;
 		line-height: 1.4;
-		border-radius: 3px;
+		// border-radius: 3px;
 		width: 80%;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,0.08)
 	}
 	@media (max-width: $bp-tablet) {
 		margin-top: -20px;
 		p {
-			padding: 35px;
-			font-size: 24px;
 			margin-top: 0;
 		}
 	}
 	@media (max-width: $bp-mobile) {
 		p {
-			padding: 35px;
+			padding: 25px;
 			font-size: 18px;
 			padding: 20px;
 			width: 90%;

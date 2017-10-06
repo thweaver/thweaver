@@ -44,7 +44,7 @@
                 </a>
             </li>
             <li>
-                <a href="contact.php">
+                <a href="contact.php" class="transition">
                     <span>Contact</span>
                     <?php include 'img/circle-icon.svg' ?>
                 </a>
