@@ -258,6 +258,7 @@
 
 .project-url .view-all span {
 	font-weight: $font-bold;
+	text-transform: lowercase;
 }
 
 /*=======================
@@ -475,3 +476,45 @@ Rockstar Styles
 	}
 }
 
+
+
+
+/*=======================
+Themescape Styles
+========================*/
+
+.themescape-project {
+	.wrapper {
+		background: #3b0f71;
+	}
+	.page-header:after {
+		background-image: url(../img/bg-white-dots.png);
+	}
+	.project-intro {
+		h2, p {
+			color: white;
+		}
+	}
+	.project-swatch {
+		div:first-of-type {
+			background-color: #3b0f71;
+		}
+		div:nth-of-type(2) {
+			background-color: #0069ed;
+		}
+		div:nth-of-type(3) {
+			background-color: #201d25;
+		}
+	}
+	.next-project {
+		background: #3b0f71;
+		.view-all span {
+			background: #3b0f71;
+		}
+	}
+	.project-url .view-all span, 
+	.project-url .view-all svg path {
+		fill: #3b0f71;
+		color: #3b0f71;
+	}
+}

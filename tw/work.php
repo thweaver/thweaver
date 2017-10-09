@@ -72,6 +72,20 @@
 				<img src="img/work/rockstar/project-thumb.jpg">
 			</div>
 		</a>
+		<a href="themescape.php" class="project transition toggle-view">
+			<div class="project-info">
+				<h2>Themescape Escape Rooms - Website</h2>
+				<?php include 'img/circle-icon.svg' ?>
+			</div>
+			<div class="project-info-bg themescape-info">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="project-image">
+				<img src="img/work/themescape/project-thumb.jpg">
+			</div>
+		</a>
 	</div>
 </div>
 <div class="about-footer ">

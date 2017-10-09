@@ -7,16 +7,13 @@
 	<div class="project-header">
 		<div class="project-header-title">
 			<h2>
-				The Pavilion - Web Design
+				The Pavilion - Website
 			</h2>
 			<p>Role: Web Design<br/>
 			Agency: The Firm Graphics</p>
 		</div>
 		<div class="project-intro">
-			<p class="toggle-view">The Pavilion at Irving Music Factory is a unique boutique, open-air pavilion offering three flexible capacities including 2,500 for an intimate theater, 4,000 indoor theater and 8,000. Exclusively booked and promoted by Live Nation.</p>
-
-				
-				
+			<p class="toggle-view">The Pavilion at Irving Music Factory Dallas is a unique boutique, open-air pavilion offering three flexible capacities including 2,500 for an intimate theater, 4,000 indoor theater and 8,000. Exclusively booked and promoted by Live Nation.</p>
 		</div> 
 	</div>
 	</div>
