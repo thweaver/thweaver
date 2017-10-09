@@ -50,7 +50,7 @@
 		<img src="img/work/beta/footer.jpg">
 	</div>
 	<div class="next-project">
-		<a href="beta.php" class="view-all transition toggle-view">
+		<a href="rockstar.php" class="view-all transition toggle-view">
 			<span>Next Project</span>
 			<?php include 'img/circle-icon.svg' ?>
 		</a>

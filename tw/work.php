@@ -14,7 +14,7 @@
 </div>
 <div class="work-container">
 	<div class="grid">
-		<a href="session.php" class="project transision">
+		<a href="session.php" class="project transision toggle-view">
 			<div class="project-info">
 				<h2>Session - iOS App</h2>
 				
@@ -29,7 +29,7 @@
 				<img src="img/work/session/project-thumb.jpg">
 			</div>
 		</a>
-		<a href="beta.php" class="project transition">
+		<a href="beta.php" class="project transition toggle-view">
 			<div class="project-info">
 				<h2>Beta Nightclub - Website Redesign</h2>
 				
@@ -44,7 +44,7 @@
 				<img src="img/work/beta/project-thumb.jpg">
 			</div>
 		</a>
-		<a href="pavilion.php" class="project transition">
+		<a href="pavilion.php" class="project transition toggle-view">
 			<div class="project-info">
 				<h2>The Pavilion - Web Design</h2>
 				<?php include 'img/circle-icon.svg' ?>
@@ -56,6 +56,20 @@
 			</div>
 			<div class="project-image">
 				<img src="img/work/pavilion/project-thumb.jpg">
+			</div>
+		</a>
+		<a href="rockstar.php" class="project transition toggle-view">
+			<div class="project-info">
+				<h2>Rockstar Gallery - Website Redesign</h2>
+				<?php include 'img/circle-icon.svg' ?>
+			</div>
+			<div class="project-info-bg rockstar-info">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="project-image">
+				<img src="img/work/rockstar/project-thumb.jpg">
 			</div>
 		</a>
 	</div>

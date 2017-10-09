@@ -392,3 +392,39 @@ Pavilion Styles
 }
 
 
+
+/*=======================
+Rockstar Styles
+========================*/
+
+.rockstar-project {
+	.wrapper {
+		background: #8c0000;
+	}
+	.page-header:after {
+		background-image: url(../img/bg-white-dots.png);
+	}
+	.project-intro {
+		h2, p {
+			color: white;
+		}
+	}
+	.project-swatch {
+		div:first-of-type {
+			background-color: #8c0000;
+		}
+		div:nth-of-type(2) {
+			background-color: #dcab00;
+		}
+		div:nth-of-type(3) {
+			background-color: #292929;
+		}
+	}
+	.next-project {
+		background: #8c0000;
+		.view-all span {
+			background: #8c0000;
+		}
+	}
+}
+
