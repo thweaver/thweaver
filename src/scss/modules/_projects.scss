@@ -100,6 +100,11 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-self: center;
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
 	@media (max-width: $bp-mobile) {
 		width: 100%;
 		p {
@@ -113,11 +118,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	img {
-		width: 100%;
-		height: auto;
-		display: block;
-	}
 	p {
 		font-size: 26px;
 		margin: 0;
@@ -153,14 +153,13 @@
 .project-rect {
 	width: 48%;
 	margin: 1%;
-	img {
-		width: 100%;
-		height: auto;
-		display: block;
-	}
 	@media (max-width: $bp-mobile) {
-		width: 800%;
+		width: 80%;
 	}
+}
+.project-full {
+	width: 80%;
+	margin-bottom: 1%;
 }
 .project-swatch {
 	width: 100%;
@@ -199,6 +198,9 @@
 				fill: white;
 			}
 		}
+		&.toggle-view {
+			transform: translateY(0);
+		}
 	}
 }
 .project-footer {
@@ -208,8 +210,9 @@
 	left: 0;
 	right: 0;
 	margin: auto;
-	margin-top: -100px;
+	margin-top: -600px;
 	position: relative;
+	display: none;
 	img {
 		width: 100%;
 		height: auto;
@@ -260,3 +263,91 @@ Session Styles
 Beta Styles
 ========================*/
 
+.beta-project {
+	.wrapper {
+		background: #9d05ff;
+	}
+	.page-header:after {
+		background-image: url(../img/bg-white-dots.png);
+	}
+	.project-intro {
+		h2, p {
+			color: white;
+		}
+	}
+	.project-swatch {
+		div:first-of-type {
+			background-color: #9d05ff;
+		}
+		div:nth-of-type(2) {
+			background-color: #1dacf1;
+		}
+		div:nth-of-type(3) {
+			background-color: #29e738;
+		}
+	}
+	.next-project {
+		background: #9d05ff;
+		.view-all span {
+			background: #9d05ff;
+		}
+	}
+}
+.beta-logo-animation {
+	padding: 100px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 80px;
+	background: black;
+	svg {
+	  width: 100px;
+	  height: 100px;
+	  display: block;
+	  padding: 20px;
+	}
+	.loader-outer-icon {
+	  fill: none;
+	  stroke: #9d03ff;
+	  stroke-width: 2;
+	  stroke-dasharray: 172;
+	  stroke-dashoffset: 172;
+	  animation: outer-stroke 2s .2s infinite ease-out;
+	}
+	.loader-inner-icon {
+	  fill: none;
+	  stroke: #0be923;
+	  stroke-width: 2;
+	  stroke-dasharray: 89;
+	  stroke-dashoffset: 89;
+	  animation: inner-stroke 1.5s  infinite ease-out reverse;
+	}
+	@media (max-width: $bp-tablet) {
+		margin-bottom: 60px;
+	}
+	@media (max-width: $bp-mobile) {
+		margin-bottom: 25px;
+	}
+}
+
+@keyframes outer-stroke {
+  50% {
+    stroke-dashoffset: 0;
+    stroke: #00abf4;
+  }
+  100% {
+    stroke-dashoffset: -172;
+    stroke: #0be923;
+  }
+}
+
+@keyframes inner-stroke {
+  50% {
+    stroke-dashoffset: 0;
+    stroke: #9d03ff;
+  }
+  100% {
+    stroke-dashoffset: -89;
+    stroke: #00abf4;
+  }
+}

@@ -14,10 +14,10 @@
 </div>
 <div class="work-container">
 	<div class="grid">
-		<a  href="" class="project toggle-view">
+		<a href="session.php" class="project transision">
 			<div class="project-info">
-				<h2>Project Title</h2>
-				<h3>Role: Web design</h3>
+				<h2>Session - iOS App</h2>
+				<h3>Role: Product Design | UX/UI Design | Branding</h3>
 				<?php include 'img/circle-icon.svg' ?>
 			</div>
 			<div class="project-info-bg session-info">
@@ -26,7 +26,7 @@
 				<div></div>
 			</div>
 			<div class="project-image">
-				<img src="img/temp-project-thumb.jpg">
+				<img src="img/work/session/project-thumb.jpg">
 			</div>
 		</a>
 		<a  href="" class="project toggle-view">

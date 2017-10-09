@@ -19,7 +19,7 @@
 	</div>
 	</div>
 	<div class="project-container">
-		<div class="project-swatch">
+		<div class="project-swatch toggle-view">
 			<div></div>
 			<div></div>
 			<div></div>
@@ -46,7 +46,7 @@
 		<img src="img/work/session/footer.jpg">
 	</div>
 	<div class="next-project">
-		<a href="work.php" class="view-all transition toggle-view">
+		<a href="beta.php" class="view-all transition toggle-view">
 			<span>Next Project</span>
 			<?php include 'img/circle-icon.svg' ?>
 		</a>
