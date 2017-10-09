@@ -355,3 +355,40 @@ Beta Styles
     stroke: #00abf4;
   }
 }
+
+/*=======================
+Pavilion Styles
+========================*/
+
+.pavilion-project {
+	.wrapper {
+		background: #2c92de;
+	}
+	.page-header:after {
+		background-image: url(../img/bg-white-dots.png);
+	}
+	.project-intro {
+		h2, p {
+			color: white;
+		}
+	}
+	.project-swatch {
+		div:first-of-type {
+			background-color: #2c92de;
+		}
+		div:nth-of-type(2) {
+			background-color: #373737;
+		}
+		div:nth-of-type(3) {
+			background-color: #fff;
+		}
+	}
+	.next-project {
+		background: #2c92de;
+		.view-all span {
+			background: #2c92de;
+		}
+	}
+}
+
+

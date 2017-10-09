@@ -58,19 +58,18 @@
 							<img src="img/work/beta/project-thumb.jpg">
 						</div>
 					</a>
-					<a href="" class="project">
+					<a href="pavilion.php" class="project transition">
 						<div class="project-info">
-							<h2>Project Title</h2>
-							<h3>Role: Web design</h3>
+							<h2>The Pavilion - Web Design</h2>
 							<?php include 'img/circle-icon.svg' ?>
 						</div>
-						<div class="project-info-bg travel-info">
+						<div class="project-info-bg pavilion-info">
 							<div></div>
 							<div></div>
 							<div></div>
 						</div>
 						<div class="project-image">
-							<img src="img/temp-project-thumb-3.jpg">
+							<img src="img/work/pavilion/project-thumb.jpg">
 						</div>
 					</a>
 				</div>
