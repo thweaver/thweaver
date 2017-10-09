@@ -47,7 +47,7 @@
 	}
 }
 .project-intro {
-	width: 70%;
+	width: 80%;
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 80px;
@@ -163,7 +163,13 @@
 }
 .project-full {
 	width: 80%;
-	margin-bottom: 1%;
+	margin-bottom: 80px;
+	@media (max-width: $bp-tablet) {
+		margin-bottom: 60px;
+	}
+	@media (max-width: $bp-mobile) {
+		margin-bottom: 40px;
+	}
 }
 .project-swatch {
 	width: 100%;
@@ -181,7 +187,7 @@
 		height: 20px;
 	}
 	@media (max-width: $bp-mobile) {
-		margin-bottom: 25px;
+		margin-bottom: 40px;
 		height: 4px;
 	}
 }
@@ -226,6 +232,32 @@
 	@media (max-width: $bp-tablet) {
 		width: 100%;
 	}
+}
+.project-copy {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 80px;
+	p {
+		font-size: 18px;
+		line-height: 1.4;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	@media (max-width: $bp-tablet) {
+		margin-bottom: 60px;
+		width: 100%;
+		font-size: 16px;
+	}
+	@media (max-width: $bp-mobile) {
+		margin-bottom: 40px;
+
+	}
+}
+
+
+.project-url .view-all span {
+	font-weight: $font-bold;
 }
 
 /*=======================
@@ -295,6 +327,11 @@ Beta Styles
 		.view-all span {
 			background: #9d05ff;
 		}
+	}
+	.project-url .view-all span, 
+	.project-url .view-all svg path {
+		fill: #9d05ff;
+		color: #9d05ff;
 	}
 }
 .beta-logo-animation {
@@ -389,6 +426,11 @@ Pavilion Styles
 			background: #2c92de;
 		}
 	}
+	.project-url .view-all span, 
+	.project-url .view-all svg path {
+		fill: #2c92de;
+		color: #2c92de;
+	}
 }
 
 
@@ -425,6 +467,11 @@ Rockstar Styles
 		.view-all span {
 			background: #8c0000;
 		}
+	}
+	.project-url .view-all span, 
+	.project-url .view-all svg path {
+		fill: #8c0000;
+		color: #8c0000;
 	}
 }
 

@@ -13,12 +13,15 @@
 		</div>
 		<div class="project-intro">
 			<p class="toggle-view">Session is an App concept for iOS designed to give novice skateboards an easy way to learn new tricks, track progress, and share with friends. </p>
-				<p class="toggle-view">My main task was developing a rough identity as well as designing the initial conceptual assets for sponsorship proposals. Secondly, I worked to take the initial concept and build an information architecture scheme for the conceptual prototypes. </p>
-				<p class="toggle-view">The end result was a product with strong identity, and a clear, purposful interface, designed with a distinct user experience startegy in mind. </p>
+				
 		</div> 
 	</div>
 	</div>
 	<div class="project-container">
+		<div class="project-copy">
+			<p class="toggle-view">My main task was developing a rough identity as well as designing the initial conceptual assets for sponsorship proposals. Secondly, I worked to take the initial concept and build an information architecture scheme for the conceptual prototypes. </p>
+			<p class="toggle-view">The end result was a product with strong identity, and a clear, purposful interface, designed with a distinct user experience startegy in mind. </p>
+		</div>
 		<div class="project-swatch toggle-view">
 			<div></div>
 			<div></div>

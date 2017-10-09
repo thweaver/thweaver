@@ -14,16 +14,17 @@
 		</div>
 		<div class="project-intro">
 			<p class="toggle-view">Beta is a world renowned Nightclub in Denver, CO. Winner of such awards as #1 Nightclub in North America by Rolling Stone Magazine. </p>
-				<p class="toggle-view">This is the 3rd version of Betanightclub.com I have had the chance to work on. And the second full re-design I have lead. With ticket sales as the leading business goal, the aim for this re-design was to build a fully responsive product with a mobile first approach to content hierarchy. Furthermore, The design needed to be unique yet familiar, similar to identity goals of the club as a whole.</p>
-				<p class="toggle-view">I was hands on leading this project every step of the way. I worked on content strategy with the client, designed the mockups and overall visual style. I then personally completed all front-end coding, as well as developed a tailored content management system with Wordpress.</p>
-				<p class="toggle-view"> The final product is a bold clean interface that with a slight anti-pattern, making the layout interesting without frustrating the user. The high contrast color scheme is an homage to the lighting and lasers present in the club. </p>
-				<p class="toggle-view">
-					<a href="http://betanightclub.com" target="_blank">Betanightclub.com</a>
-				</p>
+				
+				
 		</div> 
 	</div>
 	</div>
 	<div class="project-container">
+		<div class="project-copy">
+			<p class="toggle-view">This is the 3rd version of Betanightclub.com I have had the chance to work on. And the second full re-design I have lead. With ticket sales as the leading business goal, the aim for this re-design was to build a fully responsive product with a mobile first approach to content hierarchy. Furthermore, The design needed to be unique yet familiar, similar to identity goals of the club as a whole.</p>
+			<p class="toggle-view">I was hands on leading this project every step of the way. I worked on content strategy with the client, designed the mockups and overall visual style. I then personally completed all front-end coding, as well as developed a tailored content management system with Wordpress.</p>
+			<p class="toggle-view"> The final product is a bold clean interface that with a slight anti-pattern, making the layout interesting without frustrating the user. The high contrast color scheme is an homage to the lighting and lasers present in the club. </p>
+		</div>
 		<div class="project-swatch toggle-view">
 			<div></div>
 			<div></div>
@@ -46,9 +47,9 @@
 				<img src="img/work/beta/screen-4.jpg">
 			</div>
 		</div>
-	</div>
-	<div class="project-footer toggle-view">
-		<img src="img/work/beta/footer.jpg">
+		<p class=" project-url">
+			<a href="http://betanightclub.com" target="_blank" class="view-all toggle-view"><span>Betanightclub.com</span><?php include 'img/circle-icon.svg' ?></a>
+		</p>
 	</div>
 	<div class="next-project">
 		<a href="pavilion.php" class="view-all transition toggle-view">
