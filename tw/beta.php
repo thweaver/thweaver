@@ -9,12 +9,17 @@
 			<h2>
 				Beta Nightclub - Website Redesign
 			</h2>
-			<p>Role: Web Design | Front End Development | Wordpress Development</p>
+			<p>Role: Web Design | Front End Development | Wordpress Development<br/>
+			Agency: The Firm Graphics</p>
 		</div>
 		<div class="project-intro">
-			<p class="toggle-view">Session is an App concept for iOS designed to give novice skateboards an easy way to learn new tricks, track progress, and share with friends. </p>
-				<p class="toggle-view">My main task was developing a rough identity as well as designing the initial conceptual assets for sponsorship proposals. Secondly, I worked to take the initial concept and build an information architecture scheme for the conceptual prototypes. </p>
-				<p class="toggle-view">The end result was a product with strong identity, and a clear, purposful interface, designed with a distinct user experience startegy in mind. </p>
+			<p class="toggle-view">Beta is a world renowned Nightclub in Denver, CO. Winner of such awards as #1 Nightclub in North America by Rolling Stone Magazine. </p>
+				<p class="toggle-view">This is the 3rd version of Betanightclub.com I have had the chance to work on. And the second full re-design I have lead. With ticket sales as the leading business goal, the aim for this re-design was to build a fully responsive product with a mobile first approach to content hierarchy. Furthermore, The design needed to be unique yet familiar, similar to identity goals of the club as a whole.</p>
+				<p class="toggle-view">I was hands on leading this project every step of the way. I worked on content strategy with the client, designed the mockups and overall visual style. I then personally completed all front-end coding, as well as developed a tailored content management system with Wordpress.</p>
+				<p class="toggle-view"> The final product is a bold clean interface that with a slight anti-pattern, making the layout interesting without frustrating the user. The high contrast color scheme is an homage to the lighting and lasers present in the club. </p>
+				<p class="toggle-view">
+					<a href="http://betanightclub.com" target="_blank">Betanightclub.com</a>
+				</p>
 		</div> 
 	</div>
 	</div>
@@ -33,6 +38,12 @@
 			</div>
 			<div class="project-full toggle-view">
 				<img src="img/work/beta/screen-2.jpg">
+			</div>
+			<div class="project-full toggle-view">
+				<img src="img/work/beta/screen-3.jpg">
+			</div>
+			<div class="project-full toggle-view">
+				<img src="img/work/beta/screen-4.jpg">
 			</div>
 		</div>
 	</div>

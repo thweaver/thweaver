@@ -52,10 +52,14 @@
 	margin: 0 auto;
 	padding: 80px;
 	p {
-		font-size: 26px;
+		font-size: 24px;
 		margin-top: 0;
 		font-weight: $font-bold;
-		@extend %kern;
+		line-height: 1.4;
+		letter-spacing: -0.025em;
+		a {
+			color: white;
+		}
 		&:last-of-type {
 			margin-bottom: 0;
 		}

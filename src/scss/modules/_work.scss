@@ -162,19 +162,11 @@ Work Grid Item
 	overflow: hidden;
 	h2 {
 		color: white;
-		font-size: 28px;
+		font-size: 24px;
 		@extend %kern;
 		margin: 0;
 		padding: 0;
 		text-align: left;
-	}
-	h3 {
-		color: white;
-		font-size: 20px;
-		@extend %kern;
-		font-weight: 400;
-		margin: 0;
-		padding: 0;
 	}
 	svg {
 		width: 32px;

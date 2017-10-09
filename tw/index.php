@@ -31,7 +31,7 @@
 					<a href="session.php" class="project transition">
 						<div class="project-info">
 							<h2>Session - iOS App</h2>
-							<h3>Role: Product Design | UX/UI Design | Branding</h3>
+						
 							<?php include 'img/circle-icon.svg' ?>
 						</div>
 						<div class="project-info-bg session-info">
@@ -43,7 +43,22 @@
 							<img src="img/work/session/project-thumb.jpg">
 						</div>
 					</a>
-					<a  href="" class="project">
+					<a href="beta.php" class="project transition">
+						<div class="project-info">
+							<h2>Beta Nightclub - Website Redesign</h2>
+							
+							<?php include 'img/circle-icon.svg' ?>
+						</div>
+						<div class="project-info-bg beta-info">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<div class="project-image">
+							<img src="img/work/beta/project-thumb.jpg">
+						</div>
+					</a>
+					<a href="" class="project">
 						<div class="project-info">
 							<h2>Project Title</h2>
 							<h3>Role: Web design</h3>
@@ -56,21 +71,6 @@
 						</div>
 						<div class="project-image">
 							<img src="img/temp-project-thumb-3.jpg">
-						</div>
-					</a>
-					<a  href="" class="project">
-						<div class="project-info">
-							<h2>Project Title</h2>
-							<h3>Role: Web design</h3>
-							<?php include 'img/circle-icon.svg' ?>
-						</div>
-						<div class="project-info-bg beta-info">
-							<div></div>
-							<div></div>
-							<div></div>
-						</div>
-						<div class="project-image">
-							<img src="img/temp-project-thumb-2.jpg">
 						</div>
 					</a>
 				</div>
