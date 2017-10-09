@@ -18,6 +18,7 @@
 	text-align: left;
 	margin: 0 auto;
 	background: black;
+	max-width: 1300px;
 	h2 {
 		color: white;
 		@extend %kern;
@@ -96,7 +97,7 @@
 .project-page .in-view.toggle-view {
 	transform: translateY(0);
 	opacity: 1;
-	transition: all .5s .5s ease-out;
+	transition: all .3s .3s ease-out;
 }
 .project-squares {
 	width: 100%;
@@ -260,6 +261,31 @@
 	font-weight: $font-bold;
 	text-transform: lowercase;
 }
+.default-project {
+	.wrapper {
+		background: $cyan;
+	}
+	.page-header:after {
+		background-image: url(../img/bg-white-dots.png);
+	}
+	.project-intro {
+		h2, p {
+			color: white;
+		}
+	}
+	.next-project {
+		background: $cyan;;
+		.view-all span {
+			background: $cyan;;
+		}
+	}
+	.project-url .view-all span, 
+	.project-url .view-all svg path {
+		fill: $cyan;
+		color: $cyan;
+	}
+}
+
 
 /*=======================
 Session Styles
@@ -516,5 +542,36 @@ Themescape Styles
 	.project-url .view-all svg path {
 		fill: #3b0f71;
 		color: #3b0f71;
+	}
+}
+
+
+
+/*=======================
+Insomniac Styles
+========================*/
+
+.insomniac-project {
+	.wrapper {
+		background: #b90094;
+	}
+	.page-header:after {
+		background-image: url(../img/bg-white-dots.png);
+	}
+	.project-intro {
+		h2, p {
+			color: white;
+		}
+	}
+	.next-project {
+		background: #b90094;
+		.view-all span {
+			background: #b90094;
+		}
+	}
+	.project-url .view-all span, 
+	.project-url .view-all svg path {
+		fill: #b90094;
+		color: #b90094;
 	}
 }

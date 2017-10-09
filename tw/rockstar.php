@@ -7,7 +7,7 @@
 	<div class="project-header">
 		<div class="project-header-title">
 			<h2>Rockstar Gallery - Website Redesign</h2>
-			<p>Role: Web Design | Front End Development | Wordpress Development<br/>
+			<p>Role: Web Design | Front End Development | Wordpress Development</p>
 		</div>
 		<div class="project-intro">
 			<p class="toggle-view">Rock Star Gallery is an art gallery in Scottsdale Arizona. They feature a vast collection of music memorabilia as well as fine art and photograpy. </p>

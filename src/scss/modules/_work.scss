@@ -137,7 +137,7 @@ Work Grid Item
 .in-view.project {
 	transform: scale(1);
 	opacity: 1;
-	transition: all .5s .5s ease-out;
+	transition: all .3s .3s ease-out;
 }
 .project-info {
 	position: absolute;
@@ -244,6 +244,15 @@ Work Grid Item
 }
 .themescape-info div {
 	background-color: #3b0f71;
+}
+.insomniac-info div {
+	background-color: #b90094;
+}
+.codepen-info div {
+	background-color: black;
+}
+.default-info div {
+	background-color: $cyan;
 }
 
 /****************************

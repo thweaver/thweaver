@@ -7,7 +7,7 @@
 	<div class="project-header">
 		<div class="project-header-title">
 			<h2>Themescape Escape Rooms - Website</h2>
-			<p>Role: Web Design | Front End Development | Wordpress Development<br/>
+			<p>Role: Web Design | Front End Development | Wordpress Development</p>
 		</div>
 		<div class="project-intro">
 			<p class="toggle-view">Themescape Escape Rooms in Denver, CO is a live action game where you are placed in a room with other players. Your mission is to explore your surroundings and use the elements of the room to solve a series of puzzles, find clues, and escape the room within 60 minutes. </p>
@@ -40,7 +40,7 @@
 		</p>
 	</div>
 	<div class="next-project">
-		<a href="themescape.php" class="view-all transition toggle-view">
+		<a href="web-design.php" class="view-all transition toggle-view">
 			<span>Next Project</span>
 			<?php include 'img/circle-icon.svg' ?>
 		</a>

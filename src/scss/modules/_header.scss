@@ -14,7 +14,9 @@ Header
 		// border-radius: 3px;
 		position: relative;
 		z-index: 2;
-		box-shadow: 0 0 8px 0 rgba(0,0,0,0.08)
+		margin: 0 auto;
+		box-shadow: 0 0 8px 0 rgba(0,0,0,0.08);
+		max-width: 1600px;
 	}
 	&:after {
 		@extend %pseudos;
@@ -67,7 +69,7 @@ Header
 		margin: 0 auto;
 		background: white;
 		color: black;
-		@extend %kern;
+		letter-spacing: -0.025em;
 		font-size: 24px;
 		line-height: 1.4;
 		// border-radius: 3px;

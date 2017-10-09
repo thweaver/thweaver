@@ -46,7 +46,7 @@
 		</a>
 		<a href="pavilion.php" class="project transition toggle-view">
 			<div class="project-info">
-				<h2>The Pavilion - Web Design</h2>
+				<h2>The Pavilion - Website</h2>
 				<?php include 'img/circle-icon.svg' ?>
 			</div>
 			<div class="project-info-bg pavilion-info">
@@ -84,6 +84,48 @@
 			</div>
 			<div class="project-image">
 				<img src="img/work/themescape/project-thumb.jpg">
+			</div>
+		</a>
+		<a href="webdesign.php" class="project transition toggle-view">
+			<div class="project-info">
+				<h2>Miscellaneous Web Design</h2>
+				<?php include 'img/circle-icon.svg' ?>
+			</div>
+			<div class="project-info-bg default-info">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="project-image">
+				<img src="img/work/web/project-thumb.jpg">
+			</div>
+		</a>
+		<a href="insomniac.php" class="project transition toggle-view">
+			<div class="project-info">
+				<h2>Insomniac.com - Mood Boards</h2>
+				<?php include 'img/circle-icon.svg' ?>
+			</div>
+			<div class="project-info-bg insomniac-info">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="project-image">
+				<img src="img/work/insomniac/project-thumb.jpg">
+			</div>
+		</a>
+		<a href="https://codepen.io/tweaver/" class="project toggle-view" target="_blank">
+			<div class="project-info">
+				<h2>Codepen Expermients</h2>
+				<?php include 'img/circle-icon.svg' ?>
+			</div>
+			<div class="project-info-bg codepen-info">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="project-image">
+				<img src="img/work/codepen/project-thumb.jpg">
 			</div>
 		</a>
 	</div>

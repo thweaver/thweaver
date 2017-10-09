@@ -43,11 +43,12 @@
 				<img src="img/work/pavilion/screen-2.jpg">
 			</div>
 		</div>
+		<p class="project-url">
+			<a href="http://www.thepavilionimf.com" target="_blank" class="view-all toggle-view">
+			<span>thepavilionimf.com</span><?php include 'img/circle-icon.svg' ?></a>
+		</p>
 	</div>
-	<p class=" project-url">
-		<a href="http://www.thepavilionimf.com" target="_blank" class="view-all toggle-view">
-		<span>thepavilionimf.com</span><?php include 'img/circle-icon.svg' ?></a>
-	</p>
+	
 	<div class="next-project">
 		<a href="rockstar.php" class="view-all transition toggle-view">
 			<span>Next Project</span>
