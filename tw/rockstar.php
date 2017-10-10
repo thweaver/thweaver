@@ -27,29 +27,23 @@
 			<div></div>
 			<div></div>
 		</div>
-		<div class="project-squares">
-			<div class="project-full toggle-view">
+		<div class="project-squares toggle-view">
+			<div class="project-full ">
 				<img src="img/work/rockstar/screen-1.jpg">
 			</div>
-		</div>
-		<div class="project-squares">
-			<div class="project-full toggle-view">
+			<div class="project-full">
 				<img src="img/work/rockstar/screen-2.jpg">
 			</div>
-		</div>
-		<div class="project-squares">
-			<div class="project-full toggle-view">
+			<div class="project-full">
 				<img src="img/work/rockstar/screen-3.jpg">
 			</div>
-		</div>
-		<div class="project-squares">
-			<div class="project-full toggle-view">
+			<div class="project-full">
 				<img src="img/work/rockstar/screen-4.jpg">
 			</div>
 		</div>
 	</div>
 	<div class="next-project">
-		<a href="themescape.php" class="view-all transition toggle-view">
+		<a href="insomniac.php" class="view-all transition toggle-view">
 			<span>Next Project</span>
 			<?php include 'img/circle-icon.svg' ?>
 		</a>

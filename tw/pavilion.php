@@ -32,13 +32,9 @@
 			<div class="project-full toggle-view">
 				<img src="img/work/pavilion/screen-1.jpg">
 			</div>
-		</div>
-		<div class="project-squares">
 			<div class="project-full toggle-view">
 				<img src="img/work/pavilion/screen-3.jpg">
 			</div>
-		</div>
-		<div class="project-squares">
 			<div class="project-full toggle-view">
 				<img src="img/work/pavilion/screen-2.jpg">
 			</div>

@@ -47,10 +47,6 @@
 					</div>
 				</div>
 			</div>
-		<a href="work.php" class="view-all toggle-view">
-			<span>Like this site? Check out my repo here.</span>
-			<?php include 'img/circle-icon.svg' ?>
-		</a>
 
 		</div>
 	</div>

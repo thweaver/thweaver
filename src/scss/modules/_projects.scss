@@ -93,11 +93,12 @@
 .project-page .toggle-view {
 	opacity: 0;
 	transform: translateY(15px);
+	transition: all .6s .3s ease-out;
 }
 .project-page .in-view.toggle-view {
 	transform: translateY(0);
 	opacity: 1;
-	transition: all .3s .3s ease-out;
+	transition: all .6s .3s ease-out;
 }
 .project-squares {
 	width: 100%;
@@ -575,3 +576,49 @@ Insomniac Styles
 		color: #b90094;
 	}
 }
+
+
+
+/*=======================
+Doormngr Styles
+========================*/
+
+.doormngr-project {
+	.wrapper {
+		background: #3d2251;
+	}
+	.page-header:after {
+		background-image: url(../img/bg-white-dots.png);
+	}
+	.project-intro {
+		h2, p {
+			color: white;
+		}
+	}
+	.next-project {
+		background: #3d2251;
+		.view-all span {
+			background: #3d2251;
+		}
+	}
+	.project-swatch {
+		div:first-of-type {
+			background-color: #3d2251;
+		}
+		div:nth-of-type(2) {
+			background-color: #d600f6;
+		}
+		div:nth-of-type(3) {
+			background-color: #e0e0e0;
+		}
+	}
+	.project-url .view-all span, 
+	.project-url .view-all svg path {
+		fill: #3d2251;
+		color: #3d2251;
+	}
+}
+
+
+
+
