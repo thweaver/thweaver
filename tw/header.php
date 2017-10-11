@@ -4,14 +4,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Thomas Weaver</title>
+        <meta name="description" content="Product Designer based in Denver, CO">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
+        <meta property="og:url" content="http://thweaver.co" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Thomas Weaver" />
+        <meta property="og:description" content="Product Designer based in Denver, CO" />
+        <meta property="og:image" content="img/fb.png" />
         <link rel="stylesheet" href="css/main.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     </head>
@@ -32,19 +32,19 @@
         </a>
         <ul class="nav-list">
             <li>
-                <a href="work.php" class="transition">
+                <a href="work.php" class="transition work-nav">
                     <span>Work</span>
                    <?php include 'img/circle-icon.svg' ?>
                 </a>
             </li>
             <li>
-                <a href="profile.php" class="transition">
+                <a href="profile.php" class="transition profile-nav">
                     <span>Profile</span>
                    <?php include 'img/circle-icon.svg' ?>
                 </a>
             </li>
             <li>
-                <a href="contact.php" class="transition">
+                <a href="contact.php" class="transition contact-nav">
                     <span>Contact</span>
                     <?php include 'img/circle-icon.svg' ?>
                 </a>

@@ -34,6 +34,28 @@ if (window.matchMedia) {
 }
 
 /****************************************
+Nav Classes
+****************************************/
+
+win.on( 'load', function() {
+	if( $('.work-page').length ) {
+		$('.work-nav').addClass('current');
+		console.log('work');
+	}
+});
+win.on( 'load', function() {
+	if( $('.profile-page').length ) {
+		$('.profile-nav').addClass('current');
+		console.log('profile');
+	}
+});
+win.on( 'load', function() {
+	if( $('.contact-page').length ) {
+		$('.contact-nav').addClass('current');
+	}
+});
+
+/****************************************
 Loaded Class
 ****************************************/
 

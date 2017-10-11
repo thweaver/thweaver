@@ -7,11 +7,11 @@
 					<h1><span>Thomas</span> Weaver</h1>
 					<h2>Multidisciplinary* Designer based in  Denver, CO</h2>
 					<h3>* &nbsp;
+						<span class="home-brag">Product Design</span>
 						<span class="home-brag"> UX/UI Design</span>
 						<span class="home-brag"> Front End Web Development</span>
 						<span class="home-brag"> Responsive Web Design</span>
 						<span class="home-brag"> Graphic Design & Branding</span>
-						<span class="home-brag"> Product Design</span>
 						<span class="home-brag"> Art Direction</span>
 						<span class="home-brag"> Digital Illustration</span>
 						<span class="home-brag"> Brand Development</span>
@@ -84,17 +84,17 @@
 		<!--About Footer-->
 		<div class="about-footer ">
 			<p class="about-footer-copy toggle-view">
-				Hey! Im Thomas. Thanks for checking out my site. For the past 11 years I have helped bridge the gap between business goals and user needs, working seamlessly between design and dev to bring ideas to life. When I’m working on a project, I like to be involved every step of the way, ensuring design standards and brand consistancy. 
+				Hey! Im Thomas, and for the past 11 years I have helped bridge the gap between business goals and user needs, working seamlessly between design and dev to bring ideas to life. When I’m working on a project, I like to be involved every step of the way, ensuring design standards and brand consistency. 
 			</p>
 			<div class="about-footer-buttons toggle-view">
 				<div>
-					<a href="#">
+					<a href="contact.php">
 						<span>Get In Touch</span>
 						<?php include 'img/circle-icon.svg' ?>
 					</a>
 				</div>
 				<div>
-					<a href="#">
+					<a href="profile.php">
 						<span>More About Me</span>
 						<?php include 'img/circle-icon.svg' ?>
 					</a>

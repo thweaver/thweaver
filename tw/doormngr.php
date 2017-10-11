@@ -12,13 +12,13 @@
 			<p>Role: Product Design | UX/UI Design</p>
 		</div>
 		<div class="project-intro">
-			<p class="toggle-view">Doormngr is an App concept for iOS designed to provide a mobile interface to easily check-in and add guests to your events. </p>
+			<p class="toggle-view">Doormngr is an App concept for iOS designed to provide a mobile interface to easily check in, and add guests to your events. </p>
 		</div> 
 	</div>
 	</div>
 	<div class="project-container">
 		<div class="project-copy">
-			<p class="toggle-view">The ability to manage multiple guestlists quickly and effeciantly is the main task of the app, with reporting as a secondary feature.</p>
+			<p class="toggle-view">The ability to manage multiple guest lists quickly and efficiently is the main task of the app, with reporting as a secondary feature.</p>
 			<p class="toggle-view">My role was to create a simple user flow, and to design an interface that was easy to use and free of distraction.</p>
 		</div>
 		<div class="project-swatch toggle-view">
@@ -27,13 +27,13 @@
 			<div></div>
 		</div>
 		<div class="project-squares">
-			<div class="project-rect toggle-view">
+			<div class="project-rect">
 				<img src="img/work/doormngr/screen-1.jpg">
 			</div>
-			<div class="project-rect toggle-view">
+			<div class="project-rect">
 				<img src="img/work/doormngr/screen-2.jpg">
 			</div>
-			<div class="project-rect toggle-view">
+			<div class="project-rect">
 				<img src="img/work/doormngr/screen-3.jpg">
 			</div>
 		</div>

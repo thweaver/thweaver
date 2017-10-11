@@ -10,15 +10,15 @@
 			<p>Role: Web Design | Front End Development | Wordpress Development</p>
 		</div>
 		<div class="project-intro">
-			<p class="toggle-view">Themescape Escape Rooms in Denver, CO is a live action game where you are placed in a room with other players. Your mission is to explore your surroundings and use the elements of the room to solve a series of puzzles, find clues, and escape the room within 60 minutes. </p>
+			<p class="toggle-view">Themescape Escape Rooms in Denver, CO is a live action game where your mission is to explore your surroundings and use the elements of the room to solve a series of puzzles, find clues, and escape the room within 60 minutes. </p>
 		</div> 
 	</div>
 	</div>
 	<div class="project-container">
 		<div class="project-copy">
 			<p class="toggle-view">The strategy for the website was to create an online space to give people information on the new and emerging trend of escape rooms, and to provide an online booking portal</p>
-			<p class="toggle-view">I worked from a visual identity created by The Firm Graphics, to design the overall visual style of the website. I was then personally responsible for all front-end coding, as well as developing a content management system with Wordpress.</p>
-			<p class="toggle-view">The site features a futuristic atmosphere that encompases a straight forward easy to use interface.</p>
+			<p class="toggle-view">I worked from a visual identity created by The Firm Graphics, to design the website. I was then personally responsible for all front end coding, as well as developing a content management system with Wordpress.</p>
+			<p class="toggle-view">The site features a futuristic atmosphere that encompasses a straight forward - easy to use interface.</p>
 		</div>
 		<div class="project-swatch toggle-view">
 			<div></div>

@@ -17,17 +17,18 @@
 	</div>
 	<div class="project-container">
 		<div class="project-copy">
-			<p class="toggle-view">Insomniac wanted to revamp thier current online experience to something totally unique.</p>
-			<p class="toggle-view">I was tasked with designing several mood boards, each with a completely different look and feel. Insomniac is known for eye catching aesthetics at thier events, and they wanted an online experience that had an emphasis on style</p>
+			<p class="toggle-view">Insomniac wanted to revamp their current online experience to something totally unique.</p>
+			<p class="toggle-view">I was tasked with designing several mood boards, each with a completely different look and feel. Insomniac is known for eye catching aesthetics at their events, and they wanted an online experience that had an emphasis on style.
+</p>
 		</div>
 		<div class="project-squares">
-			<div class="project-full toggle-view">
+			<div class="project-full">
 				<img src="img/work/insomniac/screen-1.jpg">
 			</div>
-			<div class="project-full toggle-view">
+			<div class="project-full">
 				<img src="img/work/insomniac/screen-2.jpg">
 			</div>
-			<div class="project-full toggle-view">
+			<div class="project-full">
 				<img src="img/work/insomniac/screen-3.jpg">
 			</div>
 		</div>

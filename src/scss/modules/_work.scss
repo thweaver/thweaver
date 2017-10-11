@@ -90,7 +90,7 @@ Work Grid Item
 		transition: transform 1s;
 		will-change: transform;
 	}
-	&:hover {
+	.no-touch &:hover {
 		.project-info {
 			opacity: 1;
 			transform: translateX(0);
@@ -301,7 +301,6 @@ Home View All Button
 		}
 	}
 	&:hover {
-		transform: scale(0.9);
 		svg {
 			opacity: 1;
 			transform: scale(1);

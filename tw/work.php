@@ -2,14 +2,14 @@
 
 
 
-<div class="container">
+<div class="container work-page">
 <div class="page-header">
 	<img src="img/work-page.jpg">
 </div>
 <div class="wrapper">
 <div class="header-copy">
 	<p>
-		Here is a collection of some of my more recent work. I have been involved in hundreds of projects over the past 11 years, everything from large e-commerce sites, to small native apps. This is just a small sampling. Drop me a line if you’d like to see more!
+		I have been involved in hundreds of projects over the past 11 years, from large e-commerce sites, to small native apps. Here is a small collection of recent projects I have worked on. 
 	</p>
 </div>
 <div class="work-container">

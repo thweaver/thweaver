@@ -122,7 +122,7 @@ Nav List
 				fill: $cyan;
 			}
 		}
-		&:hover {
+		.no-touch &:hover {
 			svg {
 				opacity: 1;
 				transform: scale(1);
@@ -176,6 +176,16 @@ Nav List
 					clip-path: polygon(0% 0%, 0% 100%, 22% 100%, 22% 25%, 100% 25%, 100% 75%, 22% 76%, 10% 100%, 100% 100%, 100% 0%);
 				}
 			}
+		}
+	}
+}
+.current {
+	text-decoration: line-through;
+	color: white;
+	.no-touch &:hover {
+		transform: scale(1);
+		svg {
+			display: none;
 		}
 	}
 }

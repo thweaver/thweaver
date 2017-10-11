@@ -16,7 +16,7 @@
 				transition: fill .3s;
 			}
 		}
-		&:hover {
+		.no-touch &:hover {
 			svg path {
 				fill: $cyan;
 			}

@@ -94,8 +94,7 @@
 				fill: white;
 			}
 		}
-		&:hover {
-			transform: scale(0.9);
+		.no-touch &:hover {
 			svg {
 				opacity: 1;
 				transform: scale(1);
