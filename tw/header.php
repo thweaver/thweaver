@@ -16,7 +16,11 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     </head>
 	<body>
+    <!--[if lt IE 10]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to view this website.</p>
+        <![endif]-->
     <div class="loader">
+        <?php include 'img/circle-icon.svg' ?>
         <div></div>
         <div></div>
         <div></div>

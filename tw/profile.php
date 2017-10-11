@@ -7,7 +7,7 @@
 			<img src="img/work-page.jpg">
 		</div>
 		<div class="profile-header-copy">
-		<p>Hey! Im Thomas - a Product Designer living in Denver, CO. I have a fairly diverse background in UI/Web design, front end development, graphic design, and branding. I am an advocate for strong visual communication, but I also believe that good design is more than just pixels on a screen.
+		<p>Hey! Im Thomas - a Multidisciplinary Designer living in Denver, CO. I have a fairly diverse background in UI/Web design, front end development, graphic design, and branding. I am an advocate for strong visual communication, but I also believe that good design is more than just pixels on a screen.
 		</p>
 		<div class="profile-scroll-prompt">
 			<?php include 'img/scroll-prompt.svg' ?>
