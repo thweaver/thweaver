@@ -26,12 +26,12 @@
 			<div></div>
 		</div>
 		<div class="project-squares">
-			<div class="project-full toggle-view">
+			<div class="project-full">
 				<img src="img/work/themescape/screen-1.jpg">
 			</div>
 		</div>
 		<div class="project-squares">
-			<div class="project-full toggle-view">
+			<div class="project-full ">
 				<img src="img/work/themescape/screen-2.jpg">
 			</div>
 		</div>
@@ -40,7 +40,7 @@
 		</p>
 	</div>
 	<div class="next-project">
-		<a href="web-design.php" class="view-all transition toggle-view">
+		<a href="web-design" class="view-all transition toggle-view">
 			<span>Next Project</span>
 			<?php include 'img/circle-icon.svg' ?>
 		</a>

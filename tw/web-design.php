@@ -40,7 +40,7 @@
 		</div>
 	</div>
 	<div class="next-project">
-		<a href="session.php" class="view-all transition toggle-view">
+		<a href="session" class="view-all transition toggle-view">
 			<span>Next Project</span>
 			<?php include 'img/circle-icon.svg' ?>
 		</a>

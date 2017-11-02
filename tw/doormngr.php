@@ -42,7 +42,7 @@
 		<img src="img/work/doormngr/footer.jpg">
 	</div>
 	<div class="next-project">
-		<a href="pavilion.php" class="view-all transition toggle-view">
+		<a href="pavilion" class="view-all transition toggle-view">
 			<span>Next Project</span>
 			<?php include 'img/circle-icon.svg' ?>
 		</a>

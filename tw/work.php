@@ -14,7 +14,7 @@
 </div>
 <div class="work-container">
 	<div class="grid">
-		<a href="session.php" class="project transition toggle-view">
+		<a href="session" class="project transition toggle-view">
 			<div class="project-info">
 				<h2>Session - iOS App</h2>
 				
@@ -29,7 +29,7 @@
 				<img src="img/work/session/project-thumb.jpg">
 			</div>
 		</a>
-		<a href="beta.php" class="project transition toggle-view">
+		<a href="beta" class="project transition toggle-view">
 			<div class="project-info">
 				<h2>Beta Nightclub - Website Redesign</h2>
 				
@@ -44,7 +44,7 @@
 				<img src="img/work/beta/project-thumb.jpg">
 			</div>
 		</a>
-		<a href="doormngr.php" class="project transision toggle-view">
+		<a href="doormngr" class="project transision toggle-view">
 			<div class="project-info">
 				<h2>Doormngr - iOS App</h2>
 				
@@ -59,7 +59,7 @@
 				<img src="img/work/doormngr/project-thumb.jpg">
 			</div>
 		</a>
-		<a href="pavilion.php" class="project transition toggle-view">
+		<a href="pavilion" class="project transition toggle-view">
 			<div class="project-info">
 				<h2>The Pavilion - Website</h2>
 				<?php include 'img/circle-icon.svg' ?>
@@ -73,7 +73,7 @@
 				<img src="img/work/pavilion/project-thumb.jpg">
 			</div>
 		</a>
-		<a href="rockstar.php" class="project transition toggle-view">
+		<a href="rockstar" class="project transition toggle-view">
 			<div class="project-info">
 				<h2>Rockstar Gallery - Website Redesign</h2>
 				<?php include 'img/circle-icon.svg' ?>
@@ -87,7 +87,7 @@
 				<img src="img/work/rockstar/project-thumb.jpg">
 			</div>
 		</a>
-		<a href="insomniac.php" class="project transition toggle-view">
+		<a href="insomniac" class="project transition toggle-view">
 			<div class="project-info">
 				<h2>Insomniac Events - Mood Boards</h2>
 				<?php include 'img/circle-icon.svg' ?>
@@ -101,7 +101,7 @@
 				<img src="img/work/insomniac/project-thumb.jpg">
 			</div>
 		</a>
-		<a href="themescape.php" class="project transition toggle-view">
+		<a href="themescape" class="project transition toggle-view">
 			<div class="project-info">
 				<h2>Themescape Escape Rooms - Website</h2>
 				<?php include 'img/circle-icon.svg' ?>
@@ -115,7 +115,7 @@
 				<img src="img/work/themescape/project-thumb.jpg">
 			</div>
 		</a>
-		<a href="web-design.php" class="project transition toggle-view">
+		<a href="web-design" class="project transition toggle-view">
 			<div class="project-info">
 				<h2>Miscellaneous Web Design</h2>
 				<?php include 'img/circle-icon.svg' ?>
@@ -151,13 +151,13 @@
 	</p>
 	<div class="about-footer-buttons toggle-view">
 		<div>
-			<a href="#">
+			<a href="contact" class="transition">
 				<span>Get In Touch</span>
 				<?php include 'img/circle-icon.svg' ?>
 			</a>
 		</div>
 		<div>
-			<a href="#">
+			<a href="profile" class="transition">
 				<span>More About Me</span>
 				<?php include 'img/circle-icon.svg' ?>
 			</a>

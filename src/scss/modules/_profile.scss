@@ -160,7 +160,7 @@
 	> h2 {
 		color: $grey;
 		font-size: 30px;
-		letter-spacing: 0.025em;
+		@extend %kern;
 		text-align: left;
 		opacity: 0;
 		transform: translateY(15px);
@@ -232,7 +232,8 @@
 	p {
 		text-align: left;
 		color: white;
-		font-size: 15px;
+		@extend %kern;
+		font-size: 14px;
 		line-height: 1.5;
 	}
 	svg {

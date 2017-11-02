@@ -34,7 +34,7 @@
 		</div>
 	</div>
 	<div class="next-project">
-		<a href="themescape.php" class="view-all transition toggle-view">
+		<a href="themescape" class="view-all transition toggle-view">
 			<span>Next Project</span>
 			<?php include 'img/circle-icon.svg' ?>
 		</a>

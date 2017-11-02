@@ -56,14 +56,14 @@
 		</p>
 		<div class="about-footer-buttons toggle-view">
 			<div>
-				<a href="work.php">
+				<a href="work" class="transition">
 					<span>See My Work</span>
 					<?php include 'img/circle-icon.svg' ?>
 				</a>
 			</div>
 			<div>
 				
-				<a href="contact.php">
+				<a href="contact" class="transition">
 					<span>Get In Touch</span>
 					<?php include 'img/circle-icon.svg' ?>
 				</a>

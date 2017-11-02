@@ -28,7 +28,7 @@
 			<div class="home-work toggle-view">
 				<h2>Recent Work</h2>
 				<div class="grid home-work-grid">
-					<a href="session.php" class="project transition">
+					<a href="session" class="project transition">
 						<div class="project-info">
 							<h2>Session - iOS App</h2>
 							
@@ -43,7 +43,7 @@
 							<img src="img/work/session/project-thumb.jpg">
 						</div>
 					</a>
-					<a href="beta.php" class="project transition ">
+					<a href="beta" class="project transition ">
 						<div class="project-info">
 							<h2>Beta Nightclub - Website Redesign</h2>
 							
@@ -58,7 +58,7 @@
 							<img src="img/work/beta/project-thumb.jpg">
 						</div>
 					</a>
-					<a href="doormngr.php" class="project transision ">
+					<a href="doormngr" class="project transision ">
 						<div class="project-info">
 							<h2>Doormngr - iOS App</h2>
 							
@@ -74,7 +74,7 @@
 						</div>
 					</a>
 				</div>
-				<a href="work.php" class="view-all transition">
+				<a href="work" class="view-all transition">
 					<span>View More Projects</span>
 					<?php include 'img/circle-icon.svg' ?>
 				</a>
@@ -88,13 +88,13 @@
 			</p>
 			<div class="about-footer-buttons toggle-view">
 				<div>
-					<a href="contact.php">
+					<a href="contact" class="transition">
 						<span>Get In Touch</span>
 						<?php include 'img/circle-icon.svg' ?>
 					</a>
 				</div>
 				<div>
-					<a href="profile.php">
+					<a href="profile" class="transition">
 						<span>More About Me</span>
 						<?php include 'img/circle-icon.svg' ?>
 					</a>

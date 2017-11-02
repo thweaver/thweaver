@@ -27,7 +27,7 @@
     </div>
     <nav>
         <div class="hamburger">
-            <a href="/" class="hamburger-icon">
+            <a href="#" class="hamburger-icon">
                 <span></span>
             </a>
         </div>
@@ -36,19 +36,19 @@
         </a>
         <ul class="nav-list">
             <li>
-                <a href="work.php" class="transition work-nav">
+                <a href="work" class="transition work-nav">
                     <span>Work</span>
                    <?php include 'img/circle-icon.svg' ?>
                 </a>
             </li>
             <li>
-                <a href="profile.php" class="transition profile-nav">
+                <a href="profile" class="transition profile-nav">
                     <span>Profile</span>
                    <?php include 'img/circle-icon.svg' ?>
                 </a>
             </li>
             <li>
-                <a href="contact.php" class="transition contact-nav">
+                <a href="contact" class="transition contact-nav">
                     <span>Contact</span>
                     <?php include 'img/circle-icon.svg' ?>
                 </a>

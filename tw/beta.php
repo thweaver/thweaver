@@ -52,7 +52,7 @@
 		</p>
 	</div>
 	<div class="next-project">
-		<a href="doormngr.php" class="view-all transition toggle-view">
+		<a href="doormngr" class="view-all transition toggle-view">
 			<span>Next Project</span>
 			<?php include 'img/circle-icon.svg' ?>
 		</a>
